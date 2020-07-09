@@ -1,0 +1,167 @@
+/* Colors */
+
+
+
+
+/* Responsive brakepoints */
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+$breakpoints: (
+        'r320' : 320px,
+        'r480' : 480px,
+        'r640' : 640px,
+        'r768' : 768px,
+        'r800' : 800px,
+        'r960' : 960px,
+        'r1024' : 1024px,
+        'r1200' : 1200px,
+        'r1260' : 1260px,
+        'r1440' : 1440px,
+        'r1600' : 1600px
+);
+
+
+@mixin respond-to($breakpoint) {
+
+  // Retrieves the value from the key
+  $value: map-get($breakpoints, $breakpoint);
+
+  // If the key exists in the map
+  @if $value != null {
+
+    // Prints a media query based on the value
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+    // If the key doesn't exist in the map
+  @else {
+
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+            + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+// Transitions
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transition-transform($ttransform...) {
+  -moz-transition: -moz-transform $ttransform;
+  -o-transition: -o-transform $ttransform;
+  -webkit-transition: -webkit-transform $ttransform;
+  transition: transform $ttransform;
+}
+
+
+@mixin transition-property($property...) {
+  -moz-transition-property: $property;
+  -o-transition-property: $property;
+  -webkit-transition-property: $property;
+  transition-property: $property;
+}
+
+@mixin transition-duration($duration...) {
+  -moz-transition-property: $duration;
+  -o-transition-property: $duration;
+  -webkit-transition-property: $duration;
+  transition-property: $duration;
+}
+
+@mixin transition-timing-function($timing...) {
+  -moz-transition-timing-function: $timing;
+  -o-transition-timing-function: $timing;
+  -webkit-transition-timing-function: $timing;
+  transition-timing-function: $timing;
+}
+
+@mixin transition-delay($delay...) {
+  -moz-transition-delay: $delay;
+  -o-transition-delay: $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay: $delay;
+}
+
+
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// rotate
+@mixin rotate($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+// translate
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+// skew
+@mixin skew($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+//transform origin
+@mixin transform-origin($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+@mixin translateY($percents) {
+  @include transform(translateY($percents));
+}
+
+@mixin translateX($percents) {
+  @include transform(translateX($percents));
+}
+
+@mixin translate3d($options...) {
+  @include transform(translate3d($options));
+}

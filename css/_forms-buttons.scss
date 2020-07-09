@@ -1,0 +1,348 @@
+﻿/*------------------------------------*\
+  #PLACEHOLDERS
+\*------------------------------------*/
+
+.placeholder {
+	color: #262626;
+}
+
+::-webkit-input-placeholder {
+	color: #262626;
+}
+
+:-moz-placeholder {
+	color: #262626;
+}
+
+::-moz-placeholder {
+	color: #262626;
+	opacity: 1;
+}
+
+
+ 
+
+
+/*------------------------------------*\
+  #FORMS
+\*------------------------------------*/
+
+:focus {
+    outline: none;
+}
+
+.c-form-default {}
+
+.c-form-row {
+	margin-bottom: 12px;
+}
+
+.c-form-row label {
+	display: block;
+	padding-bottom: 6px;
+}
+
+.c-form-item {}
+
+
+/* Middle input height aligner */
+.c-form-item-container {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+}
+
+
+/* Input fields */
+
+.c-form-default input[type="text"],
+.c-form-default input[type="password"],
+.c-form-default input[type="tel"],
+.c-form-default input[type="email"],
+.c-form-default input[type="number"],
+.c-form-default textarea {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #dce6e8;
+	@include transition(border-color 0.3s);
+}
+
+.c-form-default textarea {
+  vertical-align: top;
+}
+
+
+/* Input focus styles */
+
+.c-form-default input[type="text"]:focus,
+.c-form-default input[type="password"]:focus,
+.c-form-default input[type="tel"]:focus,
+.c-form-default input[type="email"]:focus,
+.c-form-default input[type="number"]:focus,
+.c-form-default textarea:focus {
+	border-color: #262626;
+}
+
+
+/* Small style form inputs */
+
+.h-small-inputs input[type="text"],
+.h-small-inputs input[type="password"],
+.h-small-inputs input[type="tel"],
+.h-small-inputs input[type="email"],
+.h-small-inputs input[type="number"],
+.h-small-inputs textarea {
+  padding: 6px 15px;
+  font-size: 13px;
+  height: 40px;
+}
+
+
+
+/* Errors */
+
+.c-error > label,
+label.c-error {
+  color: red;
+}
+
+.c-error input[type="text"]:focus,
+.c-error input[type="password"]:focus,
+.c-error input[type="tel"]:focus,
+.c-error input[type="email"]:focus,
+.c-error input[type="number"]:focus,
+.c-error textarea:focus {
+  border-color: red;
+}
+
+
+/* Messages */
+
+.c-message {
+  margin: 0 15px;
+}
+
+  .c-message--succees {
+    color: green;
+  }
+
+  .c-message--error {
+    color: red;
+  }
+
+
+
+/* Custom upload */
+.c-custom-upload {
+  position: relative;
+  display: block;
+}
+
+  .c-custom-upload input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+  }
+
+
+/*------------------------------------*\
+Knob
+\*------------------------------------*/
+
+.c-knob {
+  position: relative;
+}
+
+.c-knob input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+
+.c-knob .c-knob-item {
+  position: relative;
+  padding-left: 60px;
+  padding-bottom: 0;
+  padding-top: 1px;
+  font-weight: normal;
+}
+
+.c-knob-item:before,
+.c-knob-item:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+}
+
+.c-knob-item:before {
+  width: 49px;
+  height: 24px;
+  border-radius: 13px;
+  background: #C4C4C4;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  @include transition(background 0.3s);
+}
+
+.c-knob-item:after {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  top: 3px;
+  left: 3px;
+  z-index: 3;
+  @include transition(left 0.3s);
+}
+
+input:checked + .c-knob-item:before {
+  background: #ddd;
+}
+
+input:checked + .c-knob-item:after {
+  left: 28px;
+}
+
+
+/*------------------------------------*\
+#Multiselect
+\*------------------------------------*/
+
+.c-multiselect {
+  position: relative;
+  z-index: 20;
+  border: 1px solid #56AB4A;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.c-multiselect.h-is-active {
+  z-index: 25;
+}
+
+
+.c-multiselect__header {
+  position: relative;
+  padding: 15px 15px;
+  padding-right: 35px;
+  display: block;
+  font-size: 18px;
+  color: #666666;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c-multiselect__header i {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  margin-top: -6px;
+  font-size: 12px;
+  color: green;
+}
+
+.c-multiselect.h-is-active .c-multiselect__header i {
+  @include rotate(180);
+}
+
+.c-multiselect .c-multiselect__options {
+  position: absolute;
+  left: 0;
+  min-width: 100%;
+  top: 100%;
+  margin-top: 5px;
+  background: #fff;
+  padding: 14px 14px;
+  border: 1px solid green;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(#000, 0.1);
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  @include transition(opacity 0.3s, visiblity 0.3s);
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+*:last-child > .c-multiselect .c-multiselect__options {
+  left: auto;
+  right: 0;
+}
+
+.c-multiselect.h-is-active .c-multiselect__options {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.c-multiselect__options a {
+  color: #3C5EB0;
+  text-decoration: underline;
+}
+
+.c-multiselect__options li {
+  margin-bottom: 16px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.c-multiselect__options li:last-child {
+  margin-bottom: 0;
+}
+
+.c-multiselect__options label {
+  color: #000;
+}
+
+.c-multiselect__options label span {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 15px;
+  color: #6F6E6E;
+}
+
+
+.c-multiselect__options .c-custom-checkbox {
+  line-height: 22px;
+}
+
+.c-multiselect__options .c-custom-checkbox img {
+  vertical-align: -9px;
+  margin-right: 9px;
+}
+
+.c-multiselect__options .c-custom-checkbox:before,
+.c-multiselect__options .c-custom-checkbox:after {
+  top: 50%;
+  margin-top: -8px;
+}
+
+
+/*------------------------------------*\
+  #Floating label
+\*------------------------------------*/
+
+@import 'form-elements/floating-label';
+
+
+
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+@import 'form-elements/buttons';
+
+
+/*------------------------------------*\
+  #Custom radio and checkbox
+\*------------------------------------*/
+
+@import 'form-elements/checkbox-radio';
+
+

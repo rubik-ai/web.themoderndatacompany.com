@@ -1,0 +1,204 @@
+/*------------------------------------*\
+  #OWL carousele fix
+\*------------------------------------*/
+
+/* Owl carousele items flickering before slide fixed */
+.owl-item {
+  z-index: -1;
+}
+
+
+/*------------------------------------*\
+  #HELPERS
+\*------------------------------------*/
+
+.h-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.h-fl {
+  float: left;
+}
+
+.h-fr {
+  float: right;
+}
+
+.h-tar {
+  text-align: right;
+}
+
+.h-tac {
+  text-align: center;
+}
+
+.h-tal {
+  text-align: left;
+}
+
+.h-date {
+  color: #ccc;
+}
+
+
+/* Vertical aligner */
+
+.h-v-align:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 1px;
+  margin-right: -6px;
+}
+
+  .h-v-align__content {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 1px);
+  }
+
+
+/* ------ Clearfix ------ */
+
+.h-row:before,
+.h-row:after,
+.h-clearfix:before,
+.h-clearfix:after,
+.h-form-row:before,
+.h-form-row:after {
+  content: "";
+  display: table;
+}
+
+.h-row:after,
+.h-clearfix:after,
+.h-form-row:after {
+  clear: both;
+}
+
+.h-row,
+.h-clearfix,
+.h-form-row {
+  zoom: 1;
+}
+
+
+
+/* Max width helpers */
+
+.h-max-width--small,
+.h-max-width--medium,
+.h-max-width--big {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.h-max-width--small {
+
+}
+
+.h-max-width--medium {
+
+}
+
+.h-max-width--big {
+
+}
+
+
+/* Video */
+
+.h-video {
+  display: inline-block;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.10);
+}
+
+.h-video video {
+  vertical-align: top;
+  width: 100%;
+}
+
+
+.h-video:before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.h-video img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.h-video span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 100%;
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 32px;
+  line-height: 70px;
+  padding-left: 5px;
+  opacity: 1;
+  @include transition(opacity 0.3s);
+}
+
+
+.h-video.is-playing span {
+  opacity: 0;
+}
+
+/* Mobile helpers */
+
+.h-mobile-show {
+  display: none !important;
+}
+
+.h-mobile-hide {
+
+}
+
+@include respond-to(r768) {
+
+  .h-mobile-show {
+    display: block !important;
+  }
+
+  .h-mobile-hide {
+    display: none !important;
+  }
+
+}
+
+
+/* Flex helpers */
+
+.h-flex--vertical-middle {
+  display: flex;
+  align-items: center;
+}
+
+
+.h-flex {
+  display: flex;
+}
+

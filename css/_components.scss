@@ -1,0 +1,114 @@
+/*------------------------------------*\
+  #Simple section
+\*------------------------------------*/
+
+.h-simple-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+
+/*------------------------------------*\
+  #Intro page
+\*------------------------------------*/
+
+.c-site--intro {
+  background: url(../img/bg-grid.svg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+
+/* Intro block */
+
+.c-intro {
+  background: #fff;
+  width: 100%;
+  max-width: 842px;
+  text-align: center;
+  padding: 156px 115px;
+  padding-bottom: 185px;
+}
+
+  .c-intro__logo {
+    margin-bottom: 75px;
+  }
+
+    .c-intro__logo img {
+      width: 100%;
+      max-width: 415px;
+    }
+
+  .c-intro__title {
+    font-size: 45px;
+    line-height: 1.2444em;
+    margin: 0;
+    margin-bottom: 56px;
+  }
+
+  .c-intro__info {
+    font-size: 20px;
+    line-height: 1.7em;
+    color: #494949;
+  }
+
+    .c-intro__info a {
+      color: #494949;
+    }
+
+      .c-intro__info a:hover {
+        color: #000;
+      }
+
+
+/* Responsive intro page */
+
+@include respond-to(r1024) {
+
+  .c-intro {
+    padding: 80px;
+    max-width: 690px;
+  }
+
+  .c-intro__logo img {
+    max-width: 250px;
+  }
+
+  .c-intro__title {
+    font-size: 32px;
+  }
+
+}
+
+@include respond-to(r640) {
+
+  .c-site--intro {
+    padding: 15px;
+  }
+
+  .c-intro {
+    padding: 35px;
+    padding-top: 40px;
+    max-width: 480px;
+  }
+
+  .c-intro__logo {
+    margin-bottom: 40px;
+  }
+
+  .c-intro__title {
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+
+  .c-intro__info {
+    font-size: 14px;
+  }
+
+}

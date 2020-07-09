@@ -1,0 +1,117 @@
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.c-site-header {
+
+}
+
+/* Logo */
+
+.c-main-logo {
+	
+}
+
+	.c-main-logo img {
+		
+	}
+
+
+
+/* Toggle mobile menu */
+
+.c-toggle-mobile-menu {
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  top: 4px;
+  height: 60px;
+  width: 60px;
+  display: none;
+}
+
+.c-toggle-mobile-menu i {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  opacity: 0;
+  color: #545c66;
+  @include transition(opacity 0.3s);
+  font-size: 32px;
+}
+
+.c-toggle-mobile-menu .icon-menu {
+  opacity: 1;
+}
+
+.h-menu-visible .c-toggle-mobile-menu {
+
+}
+
+
+.h-menu-visible .c-toggle-mobile-menu .icon-menu {
+  opacity: 0;
+}
+
+.h-menu-visible .c-toggle-mobile-menu .icon-close {
+  opacity: 1;
+}
+
+
+/* Main menu */
+
+.c-main-menu-wrapper {
+
+}
+
+  .h-menu-visible .c-main-menu-wrapper {
+
+  }
+
+
+/* Main menu */
+
+.c-main-menu {
+
+}
+
+  .c-main-menu li {
+
+  }
+
+    .c-main-menu a {
+
+    }
+
+
+/* Mobile menu responsive */
+
+@include respond-to(r1024) {
+
+  .c-toggle-mobile-menu {
+    display: inline-block;
+  }
+
+  .c-main-menu-wrapper {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    opacity: 0;
+    @include translateX(100%);
+    @include transition(transform 0.3s, opacity 0.3s);
+    z-index: 20;
+    padding: 20px 30px;
+  }
+
+  .h-menu-visible .c-main-menu-wrapper {
+    @include translateX(0);
+    opacity: 1;
+  }
+
+}
+
+

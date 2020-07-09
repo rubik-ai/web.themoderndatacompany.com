@@ -1,0 +1,45 @@
+﻿/*
+  --- READ.ME ---
+
+  General styling principles:
+  - core naming principle is BEM (Block Element Modifier)
+  - don't use id for selectors
+  - don't make long selectors 2-3 selector depth is good, longer in most cases, is bad
+  - prefixes :
+    > .c- stands for Component, it is reusable site block. In general such component should work correctly placed anywhere in site code.
+    > .h- stands for helper, it means that this class make minor style adjustments to element
+    > class name without prefix is used as id's in most cases. It is not intended to use multiple times on page.
+    > .js- stands for class used in js/jQ selecting only, so DO NOT write css for such classes
+
+    UPD: 2019 10 01
+
+*/
+
+@import 'mixins-vars';
+@import 'reset';
+//@import 'animate';
+//@import 'ui.selectmenu.customized';
+
+
+@import 'typography';
+//@import 'forms-buttons';
+//@import 'icons';
+@import 'helpers';
+
+@import 'layout';
+
+//@import 'plugins/tiny-slider';
+
+
+@import 'header';
+
+
+// All other components
+
+@import 'components';
+
+
+
+@import 'footer';
+
+

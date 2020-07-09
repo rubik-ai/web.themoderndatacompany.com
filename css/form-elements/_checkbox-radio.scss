@@ -1,0 +1,162 @@
+/*------------------------------------*\
+  #Custom checkbox
+\*------------------------------------*/
+
+.c-custom-checkbox-group {
+  margin-top: 10px;
+}
+
+
+.c-custom-checkbox-item {
+  position: relative;
+}
+
+.c-custom-checkbox-item + .c-custom-checkbox-item {
+  margin-top: 10px;
+}
+
+.c-custom-checkbox-item input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+
+.h-no-text .c-custom-checkbox {
+  width: 16px;
+  height: 1em;
+  padding-left: 16px;
+}
+
+.c-custom-checkbox {
+  padding-left: 26px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  color: #666;
+}
+
+.c-custom-checkbox:before,
+.c-custom-checkbox:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.c-custom-checkbox:before {
+  border: 1px solid #c5c5c5;
+}
+
+.c-custom-checkbox:after {
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 3px;
+  color: #ccc;
+  display: inline-block;
+  background: #666 url(../img/icon-checkbox.svg) no-repeat center center;
+  background-size: 10px 10px;
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0;
+  @include transition(opacity 0.2s);
+}
+
+input[type="checkbox"]:checked + .c-custom-checkbox:after {
+  opacity: 1;
+}
+
+
+/*------------------------------------*\
+  #Custom radio
+\*------------------------------------*/
+
+.c-custom-radio-group {
+  margin-top: 10px;
+}
+
+.c-custom-radio-item + .c-custom-radio-item {
+  margin-top: 10px;
+}
+
+
+.c-custom-radio-item {
+  position: relative;
+}
+
+.c-custom-radio-item input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.h-no-text .c-custom-radio {
+  width: 16px;
+  height: 1em;
+  padding-left: 16px;
+}
+
+.c-custom-radio-item label {
+  font-weight: normal;
+}
+
+.c-custom-radio [class^="icon"],
+.c-custom-radio [class*=" icon"] {
+  padding-left: 41px;
+  position: relative;
+}
+
+.c-custom-radio [class^="icon"]:before,
+.c-custom-radio [class*=" icon"]:before {
+  width: 30px;
+  height: 22px;
+}
+
+
+.c-custom-radio {
+  padding-left: 27px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c-custom-radio:before,
+.c-custom-radio:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  left: 0px;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+}
+
+.c-custom-radio:before {
+  border: 1px solid #c5c5c5;
+}
+
+.c-custom-radio:after {
+  background: #7d7d7d;
+  width: 8px;
+  height: 8px;
+  left: 5px;
+  top: 8px;
+  opacity: 0;
+  @include transition(opacity 0.3s);
+}
+
+
+
+input[type="radio"]:checked + .c-custom-radio:after {
+  opacity: 1;
+}
+
+
+
