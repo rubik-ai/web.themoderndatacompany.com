@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="format-detection" content="telephone=no">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Libre+Baskerville:ital@1&amp;display=swap" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="css/modern.css" type="text/css">
+  <script src="js/gsap/TweenMax.min.js"></script>
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/animation.gsap.min.js"></script>
+</head>
+
+  <body>
+    <div class="c-site">
+    <!--Header-->
+    <header><nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <a href="index.html" class="mr-3"><img src="img/main-logo-small.svg"></a><a href="https://rubik.ai/old/" class="rubik-temp-logo d-none d-md-block"><img src="img/rubik-temp-logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="MainNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="products.html" class="nav-link">Products</a></li>
+          <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="resources.html" class="nav-link">Resources</a></li>
+          <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="why-modern.html" class="nav-link">Why Modern</a></li>
+          <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="company.html" class="nav-link">Company</a></li>
+          <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="get-a-demo.html" class="nav-link">Get a Demo</a></li>
+          <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+      </div>
+    </nav>
+</header>
+
+
+    <!--Content-->
+<div class="container-fluid">
+  <div class="contacts-bg p-3 p-lg-5">
+    <div class="row justify-content-start">
+      <div class="col-lg-6">
+        <div class="p-lg-5">
+          <h2 class="mt-5 mt-lg-0">Form to contact us….</h2>
+          <form id="contact-form" method="post" action="contact.php" role="form">
+            <!--First Name-->
+            <div class="form-group">
+              <label for="First Name">First Name</label>
+              <input name="name" class="form-control form-control-lg border-0 rounded-0" id="firstname" required="required" data-error="First name is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <!--Last Name-->
+            <div class="form-group">
+              <label for="Last Name">Last Name</label>
+              <input name="surname" class="form-control form-control-lg border-0 rounded-0" id="lastname" required="required" data-error="Last name is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <!--Company Name-->
+            <div class="form-group">
+              <label for="Company Name">Company Name</label>
+              <input name="company" class="form-control form-control-lg border-0 rounded-0" id="companyname">
+            </div>
+
+            <!--Job Title-->
+            <div class="form-group">
+              <label for="Company Name">Job Name</label>
+              <input name="job" class="form-control form-control-lg border-0 rounded-0" id="jobtitle">
+            </div>
+
+            <!--Phone-->
+            <div class="form-group">
+              <label for="Phone">Phone</label>
+              <input name="phone" class="form-control form-control-lg border-0 rounded-0" id="phone">
+            </div>
+
+            <!--Email-->
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input name="email" class="form-control form-control-lg border-0 rounded-0" id="email" required="required" data-error="Email is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <!--Reason for Inquiry-->
+            <div class="form-group">
+              <label for="reason">Reason for Inquiry</label>
+              <select name="reason" class="form-control form-control-lg border-0 rounded-0" id="reason">
+                <option>General Question</option>
+                <option>Schedule a Demo</option>
+              </select>
+            </div>
+            
+            <!--Question or Comment-->
+            <div class="form-group">
+              <label for="Question or Comment">Question or Comment</label>
+              <textarea name="need" class="form-control form-control-lg border-0 rounded-0" id="comments" rows="3"></textarea>
+            </div>
+
+
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="agree" required="required" data-error="You must agree.">
+              <label class="form-check-label" for="agree">By submitting this form, I agree to be contacted by The Modern Data Company*</label>
+              <small id="emailHelp" class="form-text text-muted">* this is required for the form to submit</small>
+              <div class="help-block with-errors"></div>
+            </div>
+            <p class="text-muted">The Modern Data Company needs the contact information that you provide to us to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our <a href="privacy-policy.html">Privacy Policy.</a></p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+    
+    <!--Footer-->
+    <footer>
+      <div class="container-fluid text-white pt-5 px-lg-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <h3 class="mb-2">Intrigued? Thought so.</h3>
+            <p class="mt-0">Please email <a href="mailto:hi@themoderndatacompany.com" class="email">hi@TheModernDataCompany.com</a></p>
+          </div>
+          <div class="col-lg-4">
+            <div class="border-lg-left pl-lg-4 float-lg-right mt-4">
+              The Modern Data Company<br>2955 Campus Dr #110,<br>San Mateo,<br>California 94403, US
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 pt-5">
+          <div class="col-lg-3">
+            ⓒ2020 The Modern Data Company
+          </div>
+          <div class="col-lg-9">
+            <ul class="list-inline footer-nav">
+              <li class="list-inline-item mr-3"><a href="products.html">Products</a></li>
+              <li class="list-inline-item mr-3"><a href="resources.html">Resources</a></li>
+              <li class="list-inline-item mr-3"><a href="why-modern.html">Why Modern</a></li>
+              <li class="list-inline-item mr-3"><a href="company.html">Company</a></li>
+              <li class="list-inline-item mr-3"><a href="get-a-demo.html">Get a Demo</a></li>
+              <li class="list-inline-item mr-3"><a href="contact-us.html">Contact Us</a></li>
+              <li class="list-inline-item mr-3"><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li class="list-inline-item mr-3"><a href="terms-of-use.html">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics-->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-169007722-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-169007722-1');
+
+  </script>
+  
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/jquery.matchHeight-min.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+<script src="contact.js"></script>
+    </div>
+  </body>
+
+</html>

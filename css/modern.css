@@ -1,0 +1,610 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.72em;
+}
+
+
+.border-left-yellow {
+  border-left: 3px solid #FEBF00;
+}
+
+/*Typography*/
+
+
+p {
+  line-height: 1.72em;
+}
+
+p.lead {
+  font-family: "Gilroy";
+  font-size: 30px;
+}
+
+h1 {
+    font-family: "Gilroy-bold";
+    font-size: 85px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Gilroy-bold";
+    font-size: 60px;
+}
+
+h2.custom {
+    font-size: 90px;
+    line-height: 80px;
+    right: 60px;
+    margin: 0;
+    margin-bottom: 84px;
+    font-family: "Gilroy-bold";
+    text-transform: uppercase;
+}
+
+h2.custom sup { 
+  top: -2.5em;
+  font-size: 22%;
+}
+
+
+h3 {
+    font-family: "Gilroy-bold";
+    margin-bottom: 14px;
+    font-size: 40px;
+    line-height: 1.4;
+    
+}
+
+h3 .serif,
+h3.serif{
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-style: italic;
+  font-family: "Libre Baskerville", serif;
+}
+
+h3 sup {
+    top: -1.25em;
+  font-size: 40%;
+}
+
+
+h5 {
+    font-family: "Gilroy-bold";
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 1.4;
+    
+}
+
+.red-link {
+  font-family: "Gilroy-bold";
+  color: #FC4545;
+  border-bottom: 2px solid #FC4545;
+  font-size: 18px;
+  padding-bottom: 5px
+}
+
+.white-link {
+  font-family: "Gilroy-bold";
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  padding-bottom: 5px
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/*Form*/
+
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px;
+  font-size: 85%;
+}
+
+/*Colors*/
+
+.bg-gray {
+  background-color: #F8F8F8;
+  overflow: hidden;
+}
+
+
+.yellow {
+  color: #FEBF00;
+}
+
+.red{
+  color: #FC4545;
+}
+
+.antracite {
+  color: #3C435C;
+}
+
+.bg-red{
+  background-color: #FC4545;
+}
+
+.bg-antracite {
+  background-color: #3C435C;
+}
+
+.bg-yellow {
+  background-color: #FEBF00;
+}
+
+.bg-litegray {
+  background-color: #3C435C;
+}
+
+.bg-blue {
+  background-color:  #50B6FF;
+}
+
+/*Spacing*/
+
+@media (min-width: 992px) {
+.mt-lg-10, .my-lg-10 {
+    margin-top: 10rem!important;
+}
+  
+   .mb-lg-10, .my-lg-10 {
+    margin-bottom: 10rem!important;
+}
+  .mt-lg-15, .my-lg-15 {
+    margin-top: 15rem!important;
+}
+  
+   .mb-lg-15, .my-lg-15 {
+    margin-bottom: 15rem!important;
+}
+  
+   .mt-lg-20, .my-lg-20 {
+    margin-top: 20rem!important;
+}
+  .p-lg-7 {
+    padding: 7rem !important;
+  }
+}
+
+.block {
+  margin: 0 15px;
+  padding: 7rem 0;
+}
+
+/*Buttons*/
+
+.btn {
+  font-family: "Gilroy-bold";
+  font-weight: normal !important;
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #FC4545;
+  border-color: #FC4545;
+}
+
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #DB3535;
+  border-color: #DB3535;
+}
+
+
+.btn-secondary {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-secondary:hover,
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #000;
+  border-color: #000;
+}
+
+/*Steps*/
+
+.c-steps.second .c-step:after {
+    content: "02";
+}
+
+.c-steps.third .c-step:after {
+    content: "03";
+}
+
+/*Header*/
+
+header .bg-light {
+    background-color: #fff!important;
+}
+
+
+.navbar .rubik-temp-logo img {
+  float: left;
+  max-width: 100%;
+  border:1px solid #000;
+  margin-top: -6px;
+}
+
+header .fixed-top {
+  top: 8px;
+}
+
+
+/*Hero*/
+
+.intro {
+  min-height: 500px;
+  margin-top:50px;
+}
+
+
+/*Parallax Backgrounds*/
+
+.parallax {
+  padding: 10rem 0;
+}
+
+.parallax-bg-1 {
+   background: url(../img/intro-s-2-bg.jpg) no-repeat center top;
+   background-size: cover;
+  background-attachment: fixed;
+  margin: 0 15px;
+}
+
+.parallax-bg-2 {
+   background: url(../img/intro-s-5-bg.jpg) no-repeat center top;
+   background-size: cover;
+  background-attachment: fixed;
+  margin: 0 15px;
+  min-height: 80vh;
+}
+
+/* Products page*/
+
+.hero.products-first {
+  background: url(../img/easy-data.jpg) top left no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+
+.hero.products-second {
+  background: url(../img/intro-s-2-bg.jpg) top left no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  background-attachment: fixed;
+}
+
+.hero.products-first .card {
+  margin-bottom: -11rem;
+  margin-top: 8rem;
+}
+
+.hero.products-first .card,
+.hero.products-second .card {
+  margin-bottom: -11rem;
+  margin-top: 15rem;
+}
+
+
+.features-table .badge-light {
+    font-family: "Gilroy-bold";
+    font-size: 18px;
+    position: absolute;
+    top: 43px;
+    left: 70px;
+}
+
+.features-table .badge-red {
+    font-family: "Gilroy-bold";
+    font-size: 18px;
+    position: absolute;
+    top: 43px;
+    left: 70px;
+    color: #FC4545;
+    background-color: #fff;
+}
+
+.dataos-scheme {
+  background: url(../img/dataos-bg.svg) center center no-repeat;
+}
+
+/* Why Modern*/
+.intro.why-modern {
+  background: url(../img/why-modern-header.png) top right no-repeat #FC4545;
+}
+
+.hero.why-modern-first {
+  background: url(../img/data-value.jpg) top left no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 5rem 0;
+}
+
+/* Learning Center*/
+.intro.learning-center {
+  background: url(../img/learning-center-bg.png) top right no-repeat #FEBF00;
+}
+
+.hero.why-modern-first {
+  background: url(../img/data-value.jpg) top left no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 5rem 0;
+}
+
+.hero.case-study-1 {
+  background: url(../img/case-study-1-bg.jpg) top left no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+
+.hero.case-study-2 {
+  background: url(../img/case-study-2-bg.jpg) top left no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+
+.hero.case-study-1 .card,
+.hero.case-study-2 .card{
+  margin-bottom: -11rem;
+  margin-top: 12rem;
+}
+
+
+.hero.why-modern-first {
+  background: url(../img/data-value.jpg) top left no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+
+
+/* Company*/
+.intro.company {
+  background: url(../img/company-header.png) top right no-repeat #FEBF00;
+}
+
+.hero.company-first {
+  background: url(../img/bg-abstract.jpg) top left no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding: 5rem 0;
+  background-attachment: fixed;
+}
+
+.hero.company-first .card {
+  margin-bottom: -11rem;
+  margin-top: 6rem;
+}
+
+/* Get a demo*/
+.intro.demo {
+  background: url(../img/get-a-demo-header.png) top right no-repeat #23DB95;
+}
+
+/*Contact Us*/
+.contacts-bg {
+  background: url(../img/bg-form.png) top right no-repeat #F8F8F8;
+}
+
+
+
+/*Privacy Policy*/
+
+.privacy h2 {
+  text-transform: capitalize;
+  color: #000;
+  font-size: 3rem;
+}
+
+.privacy h3 {
+  color: #000;
+  font-size: 2rem;
+}
+
+
+/*Footer*/
+
+
+footer {
+  background-color: #000;
+  margin: 15px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a.email {
+  text-decoration: underline;
+}
+
+footer a.email:hover {
+  color: #fff;
+}
+
+footer .border-left {
+  border-left: 1px solid #fff;
+}
+
+footer .footer-nav a {
+  color: #9F9F9F;
+}
+
+footer .footer-nav a:hover {
+  color: #fff;
+}
+
+
+/*Mobile UI*/
+
+.navbar-light .navbar-toggler-icon {
+    background: url(../img/mobile-nav.svg) center center no-repeat;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: transparent;
+}
+
+.navbar-toggler {
+    padding: .25rem 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.navbar-light .navbar-toggler:focus {
+    outline: none;
+  
+}
+
+@media (max-width: 960px) {
+.c-step {
+    min-width: 100%;
+  }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h2.display_2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  
+
+  
+  h2.custom {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+  }
+  
+  h3 .serif, 
+  h3.serif {
+    font-size: 1.7rem;
+    line-height: auto;
+  }
+    p.lead {
+    font-family: "Gilroy";
+    font-size: 21px;
+}
+  
+  .carousel-item {
+    height: 25rem;
+  }
+  
+  #mobile-comparison {
+    padding:0 15px;
+  }
+  
+  #mobile-comparison .versus {
+    position: relative;
+    display: inline;
+    margin-left: 0;
+    font-size: 1rem;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+  }
+  
+  #mobile-comparison .carousel-caption {
+    top: 0;
+}
+   
+
+.carousel-control-next-icon {
+  background-image: url(../img/chevron-right.svg);
+  
+}
+  
+  .carousel-control-prev-icon {
+  background-image: url(../img/chevron-left.svg);
+}
+  
+  .block {
+    padding: 5rem 0;
+}
+  
+  .intro.products h1 {
+    font-size: 2rem;
+   }
+  
+  .intro.products {
+    min-height: 290px;
+  }
+  
+  .hero.products-second .card {
+    margin-bottom: 0;
+    margin-top: 15rem;
+}
+  
+  .dataos-scheme {
+    background: none;
+}
+  
+  .hero.case-study-1 .card, 
+  .hero.case-study-2 .card {
+    margin-bottom: 0;
+    margin-top: 12rem;
+}
+  
+  .hero.case-study-1 {
+    padding-bottom: 0;  
+}
+  
+  .intro.why-modern {
+    background: none;
+    background-color: #FC4545;
+}
+  
+  .intro.learning-center {
+    background: none;
+    background-color: #FEBF00;
+}
+  
+  .intro.company {
+    background: none;
+    background-color: #FEBF00;
+}
+  .intro.demo {
+    background: none;
+    background-color: #23DB95;
+}
+  
+  .contacts-bg {
+    background: none;
+    background-color: #F8F8F8;
+}
+  
+  }
+  
