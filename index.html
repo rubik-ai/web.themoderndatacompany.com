@@ -5,30 +5,32 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="format-detection" content="telephone=no">
-  <title></title>
-  <meta name="description" content="">
+  <title>MODERN</title>
+	<meta name="description" content="Modern data company">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Libre+Baskerville:ital@1&amp;display=swap" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="css/modern.css" type="text/css">
-  <link rel="stylesheet" href="css/fullpage.css" type="text/css">
   <script src="js/gsap/TweenMax.min.js"></script>
   <script src="js/ScrollMagic.min.js"></script>
   <script src="js/animation.gsap.min.js"></script>
 </head>
 
-  <body>
-    <div id="animated-site" class="c-site c-site--animated">
-    <!--Header-->
-    <header><nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-      <a href="index.html" class="mr-3"><img src="img/main-logo-small.svg"></a><a href="https://rubik.ai/old/" class="rubik-temp-logo d-none d-md-block"><img src="img/rubik-temp-logo.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="MainNav">
-        <ul class="navbar-nav ml-auto">
+
+  <body>
+    <div id="homepage">
+    <!--Header-->
+    <header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light pt-3">
+  <div class="container-fluid">
+    <a href="index.html" class="me-3"><img src="img/main-logo-small.svg"></a><a href="https://rubik.ai/old/" class="rubik-temp-logo d-none d-md-block"><img src="img/rubik-temp-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ms-auto">
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="products.html" class="nav-link">Products</a></li>
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="resources.html" class="nav-link">Resources</a></li>
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="why-modern.html" class="nav-link">Why Modern</a></li>
@@ -36,552 +38,377 @@
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="get-a-demo.html" class="nav-link">Get a Demo</a></li>
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
         </ul>
-
-      </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 </header>
 
 
-    <!-- Hero intro-->
-<main class="c-site-center">
-  <!--Desktop version-->
-  <div class="d-none d-lg-flex c-animated-section c-animated-section--1">
-    <div class="c-animated-section__bg"></div>
-    <h1 class="c-animated-section__title"><span>THE</span><span>MODERN</span><span>DATA</span><span>COMPANY</span></h1>
-    <h2 class="c-animated-section__subtitle">Your Modern Data Fabric</h2><img src="img/scroll-down-icon.svg">
-  </div>
-  <script type="text/javascript">
-    TweenMax.staggerTo('.c-animated-section--1 .c-animated-section__title span', 0.9, {
-      x: 0,
-      opacity: 1
-    }, 0.2);
 
-    var controller = new ScrollMagic.Controller({
-      //container: ".c-site",
-      loglevel: 1
-    });
-    // Slide 1
-    new ScrollMagic.Scene({
-        duration: 200
-      })
-      .setPin(".c-animated-section--1", {
-        pushfollowers: false
-      })
-      .addTo(controller);
-    new ScrollMagic.Scene({
-        offset: 10
-      })
-      .setTween(TweenMax.to(".c-animated-section--1 .c-animated-section__bg", 0.8, {
-        width: '100%'
-      }))
-      .addTo(controller);
-    new ScrollMagic.Scene({
-        offset: 10
-      })
-      .setTween(TweenMax.to(".c-animated-section--1 .c-animated-section__title", 0.7, {
-        left: '59%'
-      }))
-      .addTo(controller);
-    new ScrollMagic.Scene({
-        offset: 20
-      })
-      .setTween(TweenMax.to(".c-animated-section--1 .c-animated-section__subtitle", 0.7, {
-        left: '0%',
-        opacity: '1'
-      }))
-      .addTo(controller);
-
-  </script>
-  
-  <!--Mobile version-->
-  <div class="mobile block d-block d-lg-none bg-red">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>The Modern Data Company</h1>
-          <h2 class="text-white display_2">Your Modern Data Fabric</h2>
-        </div>
-      </div>
-    </div>
-  
-  </div>
-  
-
-  <!--Free your data parallax-->
-  <div class="parallax parallax-bg-1">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="text-white">Free Your Data. <br /> Free Your Business.</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--Centered B/W Block-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="mt-5 mb-5 mb-lg-10 mt-lg-10">
+    <!--Hero-->
+<div id="homepage-hero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#homepage-hero" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#homepage-hero" data-bs-slide-to="1" class=""></li>
+    <li data-bs-target="#homepage-hero" data-bs-slide-to="2" class=""></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="main carousel-item active">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="100%" height="100%" fill="none"></rect>
+      </svg>
+      <div class="carousel-caption text-center">
+        <div class="container">
           <div class="row justify-content-center">
-            <div class="col-xl-8 text-center">
-              <p class="lead">
-                Great data products are being powered with bad data.<br> This causes companies to make bad decisions.<br> There is a better way...<br>
-                <b>The Modern Way.</b>
-              </p>
+            <div class="col-12 col-xl-8">
+              <h1 class="mb-2">The Modern <br>Data Company</h1>
+              <p class="lead mb-5">Great data products are being powered with bad data. This causes companies to make bad decisions. There is a better way…The Modern Way.</p>
+              <p><a class="btn btn-light" href="get-a-demo.html" role="button">Get a Demo</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-
-  <!--The Modern Way Animated Block-->
-  <div class="c-animated-section c-animated-section--3 pt-5 pb-0 py-lg-0">
-    <div class="container-fluid">
-      <div class="row justify-content-end">
-        <div class="col-lg-6 col-xl-3">
-          <div class="my-lg-5 py-lg-5 mt-lg-10 mb-lg-10 d-inline-block">
-            <h2 class="custom yellow mt-lg-5">The<br>Modern<br>Way</h2>
-            <p>At The Modern Data Company, we developed a <b>data operating system</b> to remove complexity and future proof your data ecosystem by intelligently unifying data management under one roof.</p>
-            <h3 class="mb-4">Naturally, we call it<br /><span class="serif">DataOS<sup>®</sup></span></h3>
-          </div>
-        </div>
-        <!--Spacer-->
-        <div class="col-1 d-none d-xl-block"></div>
-
-        <div class="col-lg-6">
-          
-          <!--Desktop-->
-          <div class="c-solutions-features-animated d-none d-lg-block">
-            <div class="c-features-animated">
-              <ul>
-                <li>Trusted and high-quality data</li>
-                <li>Self-service capabilities for business users</li>
-                <li>Real-time data and analytics</li>
-                <li>Agile</li>
-                <li>IT workload automations</li>
-                <li>Plug and play front end data products</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!--Mobile-->
-          <div class=" d-block d-lg-none bg-antracite text-white px-3 py-4">
-            <ul>
-                <li>Trusted and high-quality data</li>
-                <li>Self-service capabilities for business users</li>
-                <li>Real-time data and analytics</li>
-                <li>Agile</li>
-                <li>IT workload automations</li>
-                <li>Plug and play front end data products</li>
-              </ul>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <script type="text/javascript">
-    // Slide 3
-    new ScrollMagic.Scene({
-        triggerElement: '.c-animated-section--3',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 500
-      })
-      .setTween(TweenMax.to('.c-animated-section--3 .c-solutions-features-animated', 1, {
-        y: '-300px',
-        ease: Power0.easeNone
-      }))
-      .addTo(controller);
-
-  </script>
-
-
-
-  <!--Centered B/W block-->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="mt-5 mb-5 mb-lg-10 mt-lg-10">
+    <div class="yellow carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="100%" height="100%" fill="none"></rect>
+      </svg>
+      <div class="carousel-caption text-center">
+        <div class="container">
           <div class="row justify-content-center">
-            <div class="col-xl-9 text-center">
-              <h3><span class="serif">DataOS</span> is a fully connected enterprise data fabric that reacts to your changing business needs in real-time.</h3>
-              <p class="lead">
-                Innovate on your business models without worrying about technology.
-              </p>
+            <div class="col-12 col-xl-8">
+              <h1 class="mb-4 text-dark">Build and Deploy New Data Services and Applications
+in <strike>Months</strike> Weeks</h1>
+              <p><a class="btn btn-light" href="why-modern.html" role="button">Why Modern</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dark carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="100%" height="100%" fill="none"></rect>
+      </svg>
+      <div class="carousel-caption text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-8">
+              <h1 class="mb-2">Free Your Data</h1>
+              <p class="lead mb-5">Focus on the <strong>value</strong> of your data—instead of the complex infrastructure behind it.</p>
+              <p><a class="btn btn-light" href="get-a-demo.html" role="button">Get a Demo</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <a class="carousel-control-prev" href="#homepage-hero" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#homepage-hero" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
 
-  <!--This Changes Everything-->
-  <div class="container-fluid">
-    <div class="bg-gray py-5 px-3 px-lg-0">
-      <div class="row justify-content-end">
-        <div class="col-12 col-xl-10">
-          <h2 class="custom red mt-lg-10 pr-lg-5">This<br /> Changes<br /> Everything.</h2>
-
-        </div>
+<!--Modern Data Fabric-->
+<div class="pattern-bg-right py-5">
+  <div class="container d-grid">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2>Modern Data Fabric<br> for the AI-powered World</h2>
+        <p class="lead mb-lg-5">A first of its kind Data Operating System that removes complexity to future proof your data ecosystem so you can build and deploy new data services and applications... in <span class="text-red"><strike>months</strike></span> weeks.</p>
+      </div>
+      <div class="col-lg-12 text-center">
+        <img src="media/modern-data-fabric.svg" class="img-fluid mb-lg-5">
       </div>
     </div>
   </div>
+</div>
 
-  <!--Desktop comparison version-->
-  <div class="d-none d-lg-block c-animated-section c-animated-section--6">
-    <div class="versus">VS</div>
-    <div class="h-row h-no-spacing">
-      <div class="h-col-1-of-2 h-no-padding">
-        <div class="c-why-left">
-          <span class="badge badge-dark rounded-0">CURRENT APPROACH</span>
-          <div class="c-why__inner">
-            <div class="c-why-item">On Prem / Data Silos</div>
-            <div class="c-why-item">Batch Processing</div>
-            <div class="c-why-item">Pre-integrated / Rigid Solutions</div>
-            <div class="c-why-item">Complexity</div>
-            <div class="c-why-item">Point Solutions Stitched Together  </div>
-          </div>
-        </div>
+<!--Quote-->
+<div class="bg-gray py-5">
+  <div class="container d-grid">
+    <div class="row justify-content-center">
+      <div class="col-lg-11 col-xl-9 text-center">
+        <p class="quote mb-lg-5">“If the median Fortune 1000 business in our sample (36,000 employees and $388,000 in sales per employee) increased their <span class="yellow-underline">data usability</span> by <span class="yellow-underline">10%</span>, it would translate to an increase in <span class="yellow-underline">$2.01 billion</span> in total revenue every year.”</p>
       </div>
-      <div class="h-col-1-of-2 h-no-padding">
-        <div class="c-why-right">
-          <a href="why-modern.html">Why Modern?</a>
-          <span class="badge badge-red rounded-0">MODERN WAY</span>
-          <div class="c-why__inner">
-            <div class="c-why-item"><span>Cloud Based & Single Source of Truth</span></div>
-            <div class="c-why-item"><span>Real-Time Processing</span></div>
-            <div class="c-why-item"><span>Modular / Extensible Solutions</span></div>
-            <div class="c-why-item"><span>Simplicity</span></div>
-            <div class="c-why-item"><span>DataOS<br>(Unified Platform)</span></div>
-          </div>
-        </div>
+      <div class="col-lg-12 text-center mb-lg-5">
+        <img src="media/textas-uni.png" class="img-fluid">
+        <p class="font-weight-bold mb-1">University of Texas study</p>
+        <a href="http://www.datascienceassn.org/sites/default/files/Measuring%20Business%20Impacts%20of%20Effective%20Data%20I.pdf" class="red-link" target="_blank" title="Measuring the business impacts of effective data">Measuring the business impacts of effective data</a>
       </div>
     </div>
   </div>
-  
-  <!--Mobile comparison version-->
-  <div id="mobile-comparison" class="d-block d-lg-none carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#mobile-comparison" data-slide-to="0" class="active"></li>
-      <li data-target="#mobile-comparison" data-slide-to="1" class=""></li>
-      <li data-target="#mobile-comparison" data-slide-to="2" class=""></li>
-      <li data-target="#mobile-comparison" data-slide-to="3" class=""></li>
-      <li data-target="#mobile-comparison" data-slide-to="4" class=""></li>
-    </ol>
-    <div class="carousel-inner bg-antracite">
-      <!--Versus 1-->
-      <div class="carousel-item active bg-antracite">
-         <div class="container">
-          <div class="carousel-caption text-center">
-            <p class="lead">On Prem / Data Silos</p>
-            <span class="versus">VS</span>
-            <p class="lead">Cloud Based & Single Source of Truth</p>
+</div>
+
+<!--From the Founders-->
+<div class="bg-data py-5">
+  <div class="container d-grid">
+    <div class="row justify-content-end">
+      <div class="col-lg-7 mt-lg-5">
+        <div class="card bg-white rounded-0 border-0 mt-5 mb-n7">
+          <div class="card-body p-5">
+            <h2 class="mt-0">From<br>the Founders</h2>
+            <p>Today, enterprises are spending heavily on a range of data products and stitch them together to get a semblance of the data fabric. These data products require significant integration work and customization resulting in a lack of flexibility.<br><br>
+              We saw a need for a data platform that humanizes data and its access, breaks data silos and transforms companies as they step towards data democratization and gaining business insights in real-time.<br>
+              <span class="font-weight-bold">That’s why we founded The Modern Data Company.</span>
+            </p>
           </div>
         </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--The Modern Benefit-->
+<div class="bg-yellow py-5">
+  <div class="container pt-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center mt-lg-5">
+        <h2 class="mt-5">The Modern Benefit</h2>
+      </div>
+      <div class="col-lg-4 mb-5">
+        <div class="d-flex">
+          <img src="media/icons/icon-seamless.svg" class="flex-shrink-0 me-2">
+          <h3 class="lh-1">Seamless Integration</h3>
+        </div>
+        <ul>
+        <li>Any format, any size, any velocity</li>
+        <li>Agile ingestion</li>
+        <li>80% reduction in pre-processing time</li>
+        </ul>
       </div>
       
-      <!--Versus 2-->
-      <div class="carousel-item bg-antracite">
-         <div class="container">
-          <div class="carousel-caption text-center">
-            <p class="lead">Batch Processing</p>
-            <span class="versus">VS</span>
-            <p class="lead">Real-Time Processing</p>
-          </div>
+      <div class="col-lg-4 mb-5">
+        <div class="d-flex">
+          <img src="media/icons/icon-proactive.svg" class="flex-shrink-0 me-2">
+          <h3 class="lh-1">Proactive Management</h3>
         </div>
+        <ul>
+        <li>Data-ops</li>
+        <li>Policies and security</li>
+        <li>Observability</li>
+        <li>60% reduction in Analytics cost</li>
+        </ul>
       </div>
       
-      <!--Versus 3-->
-      <div class="carousel-item bg-antracite">
-         <div class="container">
-          <div class="carousel-caption text-center">
-            <p class="lead">Pre-integrated / Rigid Solutions</p>
-            <span class="versus">VS</span>
-            <p class="lead">Modular / Extensible Solutions</p>
-          </div>
+      <div class="col-lg-4 mb-5">
+        <div class="d-flex">
+          <img src="media/icons/icon-selfserve.svg" class="flex-shrink-0 me-2">
+          <h3 class="lh-1">Self-serve Access</h3>
         </div>
+        <ul>
+        <li>Any format, any size, any velocity</li>
+        <li>Agile ingestion</li>
+        <li>80% reduction in pre-processing time</li>
+        </ul>
       </div>
-      
-      <!--Versus 4-->
-      <div class="carousel-item bg-antracite">
-         <div class="container">
-          <div class="carousel-caption text-center">
-            <p class="lead">Complexity</p>
-            <span class="versus">VS</span>
-            <p class="lead">Simplicity</p>
-          </div>
-        </div>
-      </div>
-      
-      <!--Versus 5-->
-      <div class="carousel-item bg-antracite">
-         <div class="container">
-          <div class="carousel-caption text-center">
-            <p class="lead">Point Solutions Stitched Together </p>
-            <span class="versus">VS</span>
-            <p class="lead">DataOS<br>(Unified Platform)</p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <a class="carousel-control-prev" href="#mobile-comparison" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#mobile-comparison" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  <div class="d-block d-lg-none bg-antracite block text-center p-5">
-      <a href="why-modern.html" class="my-5 white-link">Why Modern?</a>
-    </div>
 
-  <!--Parallax background-->
-  <div class="parallax parallax-bg-2">
+    </div>
   </div>
+</div>
 
-  <!--The Modern Difference-->
-  <div class="bg-yellow block">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="mb-lg-10">The Modern Difference</h2>
-        </div>
-        <!--Real-time-->
-        <div class="col-12 col-md-6 col-lg-3 pr-xl-5 text-center text-lg-left">
-          <img src="img/way-1-b.svg" class="img-fluid mb-1">
-          <h5 class="mb-1">Real-Time</h5>
-          <p class="mb-5 my-lg-0">A real-time data platform that handles data in ALL formats</p>
-        </div>
-        <!--Collaboration-->
-        <div class="col-12 col-md-6 col-lg-3 pr-xl-5 text-center text-lg-left">
-          <img src="img/way-2-b.svg" class="img-fluid mb-1">
-          <h5 class="mb-1">Collaboration</h5>
-          <p class="mb-5 my-lg-0">Collaborate on data the way you collaborate with Google docs, Asana, Jira, etc.</p>
-        </div>
-        <!--Empathy-Driven Architecture-->
-        <div class="col-12 col-md-6 col-lg-3 pr-xl-5 text-center text-lg-left">
-          <img src="img/way-3-b.svg" class="img-fluid mb-1">
-          <h5 class="mb-1">Empathy-Driven Architecture</h5>
-          <p class="mb-5 my-lg-0">Enables you to address people issues with flexible tech</p>
-        </div>
-        <!--TTROI<sup>®</sup> (Time to ROI)-->
-        <div class="col-12 col-md-6 col-lg-3 pr-xl-5 text-center text-lg-left">
-          <img src="img/way-4-b.svg" class="img-fluid mb-1">
-          <h5 class="mb-1">TTROI<sup>®</sup> (Time to ROI)</h5>
-          <p class="mb-5 my-lg-0">ROI-driven approach to delivering value for our customers (weeks vs months / years)</p>
-        </div>
+<!--The Modern Difference-->
+<div class="pattern-bg-left py-5">
+  <div class="container d-grid">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <h2>The Modern Difference</h2>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-lg-5">
+  <!--Simplicity-->    
+  <div class="col">
+    <div class="card h-100 rounded-0 border-0 shadow-sm p-3">
+      <div class="card-body">
+        <h3 class="card-title border-bottom border-2 border-secondary pb-3 mt-0">Simplicity</h3>
+        <p class="card-text">Deploy in any cloud, bring in any data, get ROI in a few weeks.</p>
       </div>
     </div>
   </div>
-  
-  
-  
-  <!--Built for Business Agility-->
-    <div class="container-fluid">
-      <div class="row justify-content-end">
-        <div class="col-lg-6 col-xl-3">
-          <div class="my-5 mt-lg-10 mb-lg-10 d-inline-block">
-            <h2 class="custom red mt-lg-5">Data<br>OS</h2>
-            <h3 class="mb-4"><span class="serif">A Data Fabric</span><br />built for Business Agility.</h3>
-            <p>The Modern DataOS is an end-to-end data fabric that handles all of your data – from ingestion to distribution.</p>
-            <h5>DataOS provides:</h5>
-            <ul class="pl-4">
-                <li>The agility to evaluate various products on the front end with no infrastructure changes.</li>
-                <li>Speed to modernize data infrastructure in a matter of weeks.</li>
-                <li>Flexibility to try best-in-class value products without worrying about compatibility, architecture alignment, etc.</li>
-              </ul>
-          </div>
-        </div>
-        <!--Spacer-->
-        <div class="col-1 d-none d-xl-block"></div>
-
-        <div class="col-lg-6">
-          <div class="mt-lg-20 mb-5 mb-lg-0">
-            <img src="img/dataos-scheme.png" class="img-fluid mt-lg-20">
-          </div>
-        </div>
+      
+  <!--Collaboration-->    
+  <div class="col">
+    <div class="card h-100 rounded-0 border-0 shadow-sm p-3">
+      <div class="card-body">
+        <h3 class="card-title border-bottom border-2 border-secondary pb-3 mt-0">Collaboration</h3>
+        <p class="card-text">With smart data discovery and unified semantic tier, collaboration and exploration becomes as easy as Google docs, Jira or Emails.</p>
       </div>
     </div>
-
-
-  
-
-
-  <!-- <div class="c-animated-section c-animated-section--4">
-        <div class="c-animated-section__bg-holder">
-          <div class="c-animated-section__bg"></div>
-        </div>
-        <div class="h-row">
-          <div class="h-col-1-of-2">
-            <div class="h-box-wrapper">
-              <div class="h-box h-box--phrase">
-                <h2>This<br /> Changes<br /> Everything.</h2>
-              </div>
-            </div>
-          </div>
-          <div class="h-col-1-of-2">
-            <div class="h-box-wrapper">
-              <div class="h-box h-box--os-features">
-                <h2>AI, ML,<br /> Experimentation,<br /> Real-time…</h2>
-                <div><a href="#">Learn more about DataOS</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
-  <script type="text/javascript">
-    // Slide 4
-    var screenHeight = window.innerHeight + 600;
-    new ScrollMagic.Scene({
-        triggerElement: '.c-animated-section--4',
-        triggerHook: 1,
-        duration: screenHeight,
-        offset: 0
-      })
-     
-      .addTo(controller);
-    new ScrollMagic.Scene({
-        triggerElement: '.c-animated-section--4',
-        triggerHook: 1,
-        duration: "200%",
-        offset: 0
-      })
-      .setTween(TweenMax.to('.c-animated-section--4 .h-box--os-features', 1, {
-        y: '100px',
-        ease: Power0.easeNone
-      }))
-      .addTo(controller);
-
-  </script>
-
-
-
-
-  <!--Footer CTA-->
-  <div class="bg-gray cta-block py-5 block">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-xl-8 text-center my-5 py-5">
-          <h3 class="serif mb-0">The Modern Approach:</h3>
-          <h2 class="mb-5 mt-2">Unclutter Your Data in 6 Weeks.</h2>
-          <p class="px-xl-5 mb-5">We take care of the technology, so you can focus on business value. <br>Contact us to see how DataOS can help your organization.</p>
-          <a href="get-a-demo.html" class="btn btn-primary btn-lg">How Will DataOS Help Me?</a>
-        </div>
+  </div>
+      
+      <!--Agility-->    
+  <div class="col">
+    <div class="card h-100 rounded-0 border-0 shadow-sm p-3">
+      <div class="card-body">
+        <h3 class="card-title border-bottom border-2 border-secondary pb-3 mt-0">Agility</h3>
+        <p class="card-text">With the moden empathy-driven architecture, future-proof your data ecosystem for unanticipated business needs.</p>
+      </div>
+    </div>
+  </div>
+      
+      <!--Security-->    
+  <div class="col">
+    <div class="card h-100 rounded-0 border-0 shadow-sm p-3">
+      <div class="card-body">
+        <h3 class="card-title border-bottom border-2 border-secondary pb-3 mt-0">Security</h3>
+        <p class="card-text">Govern your data with an ABAC-based security engine that automatically makes you CCPA/GDPR compliant. </p>
       </div>
     </div>
   </div>
 
-  <script type="text/javascript">
-    new ScrollMagic.Scene({
-        triggerElement: ".c-animated-section--6",
-        duration: 5000,
-        triggerHook: 0.2
-      })
-      .setPin(".c-animated-section--6", {
-        pushfollowers: false
-      })
-      .addTo(controller);
-    new ScrollMagic.Scene({
-        triggerElement: ".c-animated-section--6",
-        offset: 1400
-      }).setTween(TweenMax.to(".c-why__inner", 0.6, {
-        y: '-600px'
-      }))
-      .addTo(controller);
-    new ScrollMagic.Scene({
-        triggerElement: ".c-animated-section--6",
-        offset: 2000
-      }).setTween(TweenMax.to(".c-why__inner", 0.6, {
-        y: '-1200px'
-      }))
-      .addTo(controller);
-    new ScrollMagic.Scene({
-        triggerElement: ".c-animated-section--6",
-        offset: 3000
-      }).setTween(TweenMax.to(".c-why__inner", 0.6, {
-        y: '-1800px'
-      }))
-      .addTo(controller);
-    new ScrollMagic.Scene({
-        triggerElement: ".c-animated-section--6",
-        offset: 4000
-      }).setTween(TweenMax.to(".c-why__inner", 0.6, {
-        y: '-2400px'
-      }))
-      .addTo(controller);
+</div>
+  </div>
+</div>
 
-  </script>
-</main>
+<!--The Modern Approach-->
+<div class="bg-gray py-5">
+  <div class="container d-grid">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <h2 class="text-center mb-5">The Modern Approach</h2>
+        
+      </div>
+    </div>
+    <div class="row align-items-end">
+    <!--Start small-->  
+    <div class="col-12 col-lg-4 text-white bg-antracite p-5">
+      <h3 class="display-2 mb-0 mt-0">Start small</h3>
+      <p class="lead">2-3 Months</p>
+      <ul class="special-height">
+        <li>Pre-processed and Cleaned Data</li>
+        <li>Play-around & visualize on your own</li>
+        <li>Deliver ROI fast</li>
+        <li>Evangelize success and start expanding the data fabric</li>
+      </ul>
+    </div>
+    <!--Expand-->  
+    <div class="col-12 col-lg-4 text-white bg-antracite-dark p-5">
+      <h3 class="display-2 mb-0 mt-3">Expand</h3>
+      <p class="lead">2-3 Months</p>
+      <ul class="special-height">
+        <li>Deliver cross-BU insights</li>
+        <li>Smart data discovery</li>
+        <li>Global metrics and pattern detection</li>
+      </ul>
+    </div>
+    <!--Go big-->  
+    <div class="col-12 col-lg-4 text-white bg-red p-5">
+      <h3 class="display-2 mb-0 mt-5">Go big</h3>
+      <p class="lead">5-6 Months</p>
+      <ul class="special-height">
+        <li>Source of truth for all business data</li>
+        <li>Data syndication, auditing and monetization hub</li>
+        <li>Universal, Domain & Tribal Knowledge Bases</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
 
+<!--Footer CTA-->
+<div class="bg-gray pb-5">
+  <div class="container d-grid">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-7 text-center">
+        <h2 class="mb-1">Unclutter Your Data in <span class="yellow-underline">6 weeks</span></h2>
+        <p class="lead mb-5">Don’t power your innovative solutions with bad data. Power them with secure,
+governed and high-quality data every time.</p>
+        <a class="btn btn-primary mb-lg-5" href="get-a-demo.html" role="button">Get a Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
     
     <!--Footer-->
     <footer>
-      <div class="container-fluid text-white pt-5 px-lg-5">
+  <div class="container-fluid text-white py-5 px-lg-5">
+    <div class="row">
+      <div class="col-lg-12 mb-5 text-center text-lg-start">
+        <h3 class="mb-2">Intrigued? Thought so.</h3>
+        <p class="mt-0">Please email <a href="mailto:hi@themoderndatacompany.com" class="email">hi@TheModernDataCompany.com</a></p>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-lg-6 col-xl-3 d-none d-lg-block">
         <div class="row">
-          <div class="col-lg-8">
-            <h3 class="mb-2">Intrigued? Thought so.</h3>
-            <p class="mt-0">Please email <a href="mailto:hi@themoderndatacompany.com" class="email">hi@TheModernDataCompany.com</a></p>
+          <div class="col-lg-6">
+            <ul class="list-unstyled">
+              <li class=""><a href="products.html">Products</a></li>
+              <li class=""><a href="resources.html">Resources</a></li>
+              <li class=""><a href="why-modern.html">Why Modern</a></li>
+              <li class=""><a href="company.html">Company</a></li>
+            </ul>
           </div>
-          <div class="col-lg-4">
-            <div class="border-lg-left pl-lg-4 float-lg-right mt-4">
-              The Modern Data Company<br>2955 Campus Dr #110,<br>San Mateo,<br>California 94403, US
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5 pt-5">
-          <div class="col-lg-3">
-            ⓒ2020 The Modern Data Company
-          </div>
-          <div class="col-lg-9">
-            <ul class="list-inline footer-nav">
-              <li class="list-inline-item mr-3"><a href="products.html">Products</a></li>
-              <li class="list-inline-item mr-3"><a href="resources.html">Resources</a></li>
-              <li class="list-inline-item mr-3"><a href="why-modern.html">Why Modern</a></li>
-              <li class="list-inline-item mr-3"><a href="company.html">Company</a></li>
-              <li class="list-inline-item mr-3"><a href="get-a-demo.html">Get a Demo</a></li>
-              <li class="list-inline-item mr-3"><a href="contact-us.html">Contact Us</a></li>
-              <li class="list-inline-item mr-3"><a href="privacy-policy.html">Privacy Policy</a></li>
-              <li class="list-inline-item mr-3"><a href="terms-of-use.html">Terms of Use</a></li>
+          <div class="col-lg-6">
+            <ul class="list-unstyled">
+              <li class=""><a href="get-a-demo.html">Get a Demo</a></li>
+              <li class=""><a href="contact-us.html">Contact Us</a></li>
+              <li class=""><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li class=""><a href="terms-of-use.html">Terms of Use</a></li>
             </ul>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="col-lg-6 col-xl-4">
+         <div class="row">
+        <div class="col-6">
+            <div class="border-start border-2 border-warning ps-2 ps-lg-4">
+              <span class="font-weight-bold">US Office</span><br>
+              2955 Campus Dr #110<br>
+              San Mateo<br>
+              California 94403, US
+            </div>
+          </div>
+           <div class="col-6">
+            <div class="border-start border-2 border-warning ps-2 ps-lg-4">
+              <span class="font-weight-bold">India Office</span><br>
+              507-508 Apollo Premier<br>
+              Vijay Nagar Square<br>
+              Indore 452011, IN
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid border-top px-lg-5 border-dark">
+  <div class="row py-3">
+      <div class="col-12 small text-muted text-center text-lg-start">
+        ⓒ2020 The Modern Data Company
+      </div>
+    </div>
+  </div>
+  
+</footer>
 
 
 <!-- Global site tag (gtag.js) - Google Analytics-->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-169007722-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-169007722-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-169007722-1');
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-169007722-1');
 
-  </script>
-  
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/jquery.matchHeight-min.js"></script>
-  <script src="js/scripts.js"></script>
+</script>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/jquery.matchHeight-min.js"></script>
+<script src="js/scripts.js"></script>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
-
-
 
   </div>
 </body>

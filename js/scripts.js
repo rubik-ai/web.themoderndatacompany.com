@@ -18,7 +18,7 @@
         {
 
             var typed = new Typed('.js-typed-text', {
-                strings: ["_simplified^500", "_democratized^500", "_reimagined^500"],
+                strings: ["_Simplified^500", "_Democratized^500", "_Reimagined^500"],
                 typeSpeed: 50,
                 backSpeed: 20,
                 loop: true
