@@ -402,7 +402,7 @@ header .fixed-top {
   background-attachment: fixed;
 }
 
-/* Learning Center*/
+/* Why Modern*/
 .intro.why-modern {
   background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
   background-attachment: fixed;
@@ -414,6 +414,13 @@ header .fixed-top {
   min-height: 500px;
   padding: 5rem 0;
 }
+
+/*Products*/
+  .intro.products {
+    min-height: 500px;
+    background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
+    background-attachment: fixed;
+  }
 
 .hero.case-study-1 {
   background: url(../img/case-study-1-bg.jpg) top left no-repeat;
@@ -445,6 +452,7 @@ header .fixed-top {
   padding: 5rem 0;
   background-attachment: fixed;
 }
+
 
 
 /* Company*/
@@ -645,7 +653,11 @@ footer .footer-nav a:hover {
 
   .intro.products {
     min-height: 290px;
+    background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
+    background-attachment: fixed;
   }
+  
+
 
   .hero.products-second .card {
     margin-bottom: 0;
