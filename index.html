@@ -10,11 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Libre+Baskerville:ital@1&amp;display=swap" rel="stylesheet" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <link rel="stylesheet" href="css/modern.css" type="text/css">
-  <script src="js/gsap/TweenMax.min.js"></script>
-  <script src="js/ScrollMagic.min.js"></script>
-  <script src="js/animation.gsap.min.js"></script>
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="/css/modern.css" type="text/css">
+  <script src="/js/gsap/TweenMax.min.js"></script>
+  <script src="/js/ScrollMagic.min.js"></script>
+  <script src="/js/animation.gsap.min.js"></script>
 </head>
 
 
@@ -25,7 +25,7 @@
     <header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light pt-3">
   <div class="container-fluid">
-    <a href="index.html" class="me-3"><img src="img/main-logo-small.svg"></a><a href="https://rubik.ai/old/" class="rubik-temp-logo d-none d-md-block"><img src="img/rubik-temp-logo.png"></a>
+    <a href="/" class="me-3"><img src="/img/main-logo-small.svg"></a><a href="https://rubik.ai/old/" class="rubik-temp-logo d-none d-md-block"><img src="/img/rubik-temp-logo.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,6 +35,7 @@
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="resources.html" class="nav-link">Resources</a></li>
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="why-modern.html" class="nav-link">Why Modern</a></li>
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="company.html" class="nav-link">Company</a></li>
+          <!--<li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="blog.html" class="nav-link">Blog</a></li>-->
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="get-a-demo.html" class="nav-link">Get a Demo</a></li>
           <li class="nav-item ml-xl-3 text-center text-lg-left py-2 py-lg-0"><a href="contact-us.html" class="nav-link">Contact Us</a></li>
         </ul>
@@ -78,7 +79,7 @@
           <div class="row justify-content-center">
             <div class="col-12 col-xl-8">
               <h1 class="mb-4 text-dark">Build and Deploy New Data Services and Applications
-in <strike>Months</strike> Weeks</h1>
+in <span class="strike-x"><img src="media/strike-x.svg">Months</span> Weeks</h1>
               <p><a class="btn btn-light" href="why-modern.html" role="button">Why Modern</a></p>
             </div>
           </div>
@@ -118,7 +119,7 @@ in <strike>Months</strike> Weeks</h1>
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
         <h2>Modern Data Fabric<br> for the AI-powered World</h2>
-        <p class="lead mb-lg-5">A first of its kind Data Operating System that removes complexity to future proof your data ecosystem so you can build and deploy new data services and applications... in <span class="text-red"><strike>months</strike></span> weeks.</p>
+        <p class="lead mb-lg-5">A first of its kind Data Operating System that removes complexity to future proof your data ecosystem so you can build and deploy new data services and applications... in <span class="strike-x-2"><img src="media/strike-x.svg">months</span> weeks.</p>
       </div>
       <div class="col-lg-12 text-center">
         <img src="media/modern-data-fabric.svg" class="img-fluid mb-lg-5">
@@ -147,9 +148,9 @@ in <strike>Months</strike> Weeks</h1>
 <div class="bg-data py-5">
   <div class="container d-grid">
     <div class="row justify-content-end">
-      <div class="col-lg-7 mt-lg-5">
+      <div class="col-lg-7 px-4 mt-lg-5">
         <div class="card bg-white rounded-0 border-0 mt-5 mb-n7">
-          <div class="card-body p-5">
+          <div class="card-body p-4 p-lg-5">
             <h2 class="mt-0">From<br>the Founders</h2>
             <p>Today, enterprises are spending heavily on a range of data products and stitch them together to get a semblance of the data fabric. These data products require significant integration work and customization resulting in a lack of flexibility.<br><br>
               We saw a need for a data platform that humanizes data and its access, breaks data silos and transforms companies as they step towards data democratization and gaining business insights in real-time.<br>
@@ -164,7 +165,7 @@ in <strike>Months</strike> Weeks</h1>
 </div>
 
 <!--The Modern Benefit-->
-<div class="bg-yellow py-5">
+<div class="bg-yellow px-3 py-5">
   <div class="container pt-lg-5">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center mt-lg-5">
@@ -275,8 +276,8 @@ in <strike>Months</strike> Weeks</h1>
     </div>
     <div class="row align-items-end">
     <!--Start small-->  
-    <div class="col-12 col-lg-4 text-white bg-antracite p-5">
-      <h3 class="display-2 mb-0 mt-0">Start small</h3>
+    <div class="col-12 col-lg-4 text-white bg-antracite p-4 p-lg-5">
+      <h3 class="display-2 mb-0 mt-lg-0">Start small</h3>
       <p class="lead">2-3 Months</p>
       <ul class="special-height">
         <li>Pre-processed and Cleaned Data</li>
@@ -286,8 +287,8 @@ in <strike>Months</strike> Weeks</h1>
       </ul>
     </div>
     <!--Expand-->  
-    <div class="col-12 col-lg-4 text-white bg-antracite-dark p-5">
-      <h3 class="display-2 mb-0 mt-3">Expand</h3>
+    <div class="col-12 col-lg-4 text-white bg-antracite-dark p-4 p-lg-5">
+      <h3 class="display-2 mb-0 mt-lg-3">Expand</h3>
       <p class="lead">2-3 Months</p>
       <ul class="special-height">
         <li>Deliver cross-BU insights</li>
@@ -296,8 +297,8 @@ in <strike>Months</strike> Weeks</h1>
       </ul>
     </div>
     <!--Go big-->  
-    <div class="col-12 col-lg-4 text-white bg-red p-5">
-      <h3 class="display-2 mb-0 mt-5">Go big</h3>
+    <div class="col-12 col-lg-4 text-white bg-red p-4 p-lg-5">
+      <h3 class="display-2 mb-0 mt-lg-5">Go big</h3>
       <p class="lead">5-6 Months</p>
       <ul class="special-height">
         <li>Source of truth for all business data</li>
@@ -310,7 +311,7 @@ in <strike>Months</strike> Weeks</h1>
 </div>
 
 <!--Footer CTA-->
-<div class="bg-gray pb-5">
+<div class="bg-gray px-4 pb-5">
   <div class="container d-grid">
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-7 text-center">
@@ -409,6 +410,8 @@ governed and high-quality data every time.</p>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
   </div>
 </body>

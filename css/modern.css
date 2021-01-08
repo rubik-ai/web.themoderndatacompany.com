@@ -402,6 +402,8 @@ header .fixed-top {
   background-attachment: fixed;
 }
 
+
+
 /* Why Modern*/
 .intro.why-modern {
   background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
@@ -578,12 +580,12 @@ footer .footer-nav a:hover {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   h2.display_2 {
@@ -600,7 +602,11 @@ footer .footer-nav a:hover {
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+  }
+  
+  h3.display-2 {
+    font-size: 1.4rem;
   }
 
   h3 .serif,
@@ -608,12 +614,31 @@ footer .footer-nav a:hover {
     font-size: 1.7rem;
     line-height: auto;
   }
+  
+  h3.accordion-header {
+    font-size: 1rem;
+  }
 
+  p.quote {
+    font-size: 20px;
+  }
+  
+  p.lead {
+    font-size: 16px;
+  }
 
   .carousel-item {
     height: 25rem;
   }
 
+  .strike-x img {
+    width: 105px;
+}
+  
+  .special-height {
+    height: auto !important;
+}
+  
   #mobile-comparison {
     padding: 0 15px;
   }
@@ -788,5 +813,59 @@ footer .footer-nav a:hover {
 
 .resources-card {
   box-shadow: 0 4px 17px rgba(0,0,0,0.05);
+}
+
+.strike-x,
+.strike-x-2 {
+  display: inline-block;
+}
+
+.strike-x img {
+  position: absolute;
+}
+
+
+.strike-x-2 img {
+  position: absolute;
+  width: 60px;
+  margin-top: 4px;
+}
+
+.middle > * {
+  vertical-align: middle;
+}
+
+
+/*Blog*/
+.posts-grid {
+  margin-top: -22rem;
+}
+.intro.blog {
+  background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
+  background-attachment: fixed;
+}
+
+.intro.blog-post {
+  background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat;
+  background-attachment: fixed;
+}
+
+.blog.card {
+  box-shadow: 0 2px 10px rgba(0,0,0,.08)!important;
+}
+
+.blog-date {
+  font-weight: bold;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(.27em,rgba(254, 191, 0, 0.85)));
+    background-image: linear-gradient(transparent calc(100% - .27em),rgba(254, 191, 0, 0.85) .27em);
+    background-repeat: no-repeat;
+    background-size: 100% 91%;
+    display: inline;
+    -webkit-transition: background-size .2s ease-out;
+    transition: background-size .2s ease-out;
+}
+
+.post-article {
+  margin-top: -30rem;
 }
 
