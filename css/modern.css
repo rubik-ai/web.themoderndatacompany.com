@@ -124,6 +124,10 @@ h5 {
   color: #FC4545;
 }
 
+.text-yellow {
+  color: #FEBF00;
+}
+
 /*Form*/
 
 .help-block.with-errors {
@@ -154,6 +158,10 @@ h5 {
 
 .bg-red {
   background-color: #FC4545;
+}
+
+.bg-green {
+  background-color: #23db95;
 }
 
 .bg-antracite {
@@ -842,8 +850,9 @@ footer .footer-nav a:hover {
   margin-top: -22rem;
 }
 .intro.blog {
-  background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
+  background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #3c435c;
   background-attachment: fixed;
+  min-height: auto;
 }
 
 .intro.blog-post {
