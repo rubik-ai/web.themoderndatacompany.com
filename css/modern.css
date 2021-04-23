@@ -226,20 +226,29 @@ h5 {
 
 /*Buttons*/
 
-.btn {
+.btn,
+.hbspt-form .hs-button {
   font-weight: bold;
   border-radius: 100px;
   padding: 0.75rem 3rem;
 }
 
-.btn-primary {
+.hbspt-form .hs-button {
+  border: none;
+  color: #fff;
+}
+
+
+.btn-primary,
+.hbspt-form .hs-button{
   background-color: #FC4545;
   border-color: #FC4545;
 }
 
 .btn-primary:hover,
 .btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active {
+.btn-primary:not(:disabled):not(.disabled):active,
+.hbspt-form .hs-button:hover {
   background-color: #DB3535;
   border-color: #DB3535;
 }
