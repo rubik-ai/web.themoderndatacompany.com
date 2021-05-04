@@ -2,7 +2,6 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.72em;
-  padding-top:69px;
 }
 
 
@@ -306,8 +305,8 @@ header:before {
     top: 0;
     width: 100%;
     height: 5px;
-    background: url(../img/bg-grid-small.svg) no-repeat center top;
-    background-size: cover;
+    background: url(../img/bg-grid-small.svg) repeat-x left top;
+    background-size: auto;
     z-index: 555;
 }
 
@@ -326,7 +325,7 @@ header .fixed-top {
 /*Hero*/
 
 .intro {
-  min-height: 500px;
+  min-height: 300px;
 }
 
 
@@ -416,7 +415,7 @@ header .fixed-top {
 
 /* Learning Center*/
 .intro.learning-center {
-  background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #3AABF4;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #3AABF4;
   background-attachment: fixed;
 }
 
@@ -424,7 +423,7 @@ header .fixed-top {
 
 /* Why Modern*/
 .intro.why-modern {
-  background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FEBF00;
   background-attachment: fixed;
 }
 
@@ -438,7 +437,7 @@ header .fixed-top {
 /*Products*/
   .intro.products {
     min-height: 500px;
-    background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
+    background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FEBF00;
     background-attachment: fixed;
   }
 
@@ -749,29 +748,29 @@ footer .footer-nav a:hover {
 
 /*Backgrounds*/
 #homepage-hero .carousel-item {
-  height: 40rem;
+  height: 35rem;
 }
 
 #homepage-hero .main.carousel-item {
-  background: url("../media/hero-red-pattern-bg.svg") top left no-repeat #FC4545;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FC4545;
   background-attachment: fixed;
 }
 
 
 #homepage-hero .yellow.carousel-item {
-  background: url("../media/hero-red-pattern-bg.svg") top left no-repeat #FEBF00;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FEBF00;
   background-attachment: fixed;
 }
 
 #homepage-hero .dark.carousel-item {
-  background: url("../media/hero-red-pattern-bg.svg") top left no-repeat #3C435C;
+  background: url(../media/hero-color-pattern-left-bg.svg) top left no-repeat #293046;
   background-attachment: fixed;
 }
 
 
 
 #homepage-hero .carousel-caption {
-  top: 15%;
+  top: 8%;
 }
 
 .pattern-bg-right {
@@ -787,6 +786,10 @@ footer .footer-nav a:hover {
 
 .bg-pattern-yellow-right {
   background: url("../media/hero-white-pattern-right-bg-wide.svg") top right no-repeat #FEBF00;
+}
+
+.bg-pattern-yellow-left {
+  background: url("../media/hero-white-pattern-left-bg.svg") top left no-repeat #FEBF00;
 }
 
 .bg-data {
@@ -859,13 +862,13 @@ footer .footer-nav a:hover {
   margin-top: -22rem;
 }
 .intro.blog {
-  background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat #FEBF00;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FEBF00;
   background-attachment: fixed;
-  min-height: auto;
+  min-height: 300px;
 }
 
 .intro.blog-post {
-  background: url(../media/hero-white-pattern-right-bg.svg) top right no-repeat;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat;
   background-attachment: fixed;
 }
 
@@ -885,7 +888,7 @@ footer .footer-nav a:hover {
 }
 
 .post-article {
-  margin-top: -30rem;
+  margin-top: -20rem;
 }
 
 /*Search*/
