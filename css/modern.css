@@ -42,9 +42,10 @@ p.lead {
     text-decoration: none;
 }
 
-h1 {
+h1,.h1 {
   font-family: "Gilroy-bold";
   font-size: 56px;
+  margin: 1em 0;
 }
 
 h2 {
