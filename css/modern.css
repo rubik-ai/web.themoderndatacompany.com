@@ -281,6 +281,14 @@ h5 {
   color: #fff;
 }
 
+.btn-outline-secondary {
+    color: #000;
+    background-color: transparent;
+    border-color: #000;
+  border-width: 2px;
+
+}
+
 
 /*Steps*/
 
@@ -414,10 +422,74 @@ header .fixed-top {
   padding: 5rem 0;
 }
 
-/* Learning Center*/
+/* Learning Center / Resources*/
 .intro.learning-center {
   background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #3AABF4;
   background-attachment: fixed;
+}
+
+.intro.resources {
+  background: url(../media/hero-color-pattern-left-bg.svg) top left no-repeat #293045;
+  background-attachment: fixed;
+}
+
+.resources-navigation {
+  box-shadow: inset 0px -1px #dee2e6;
+}
+
+.resources-nav-item {
+  position: relative;
+}
+
+.resources-nav-item .badge {
+  position: absolute;
+  top: -11px;
+  right: -14px;
+  border: 1px solid #F64546;
+  color: #F64546;
+  position: absolute;
+  background-color: #fff;
+  padding: 2px;
+  height: 16px;
+  width: 16px;
+  font-weight: normal;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 11px;
+}
+
+a.tag {
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  color: #656565;
+  padding: 5px 10px;
+}
+
+a.tag:hover {
+  background-color: #656565;
+  border-radius: 50px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.label-asset-type {
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.featured-tag {
+  background-color: #F64546;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  position: absolute;
+  top: -35px;
+  right: -48px;
+  display: block;
+  padding: 5px 10px;
+  line-height: 1;
+  font-weight: 500;
 }
 
 
