@@ -128,6 +128,10 @@ h5 {
   color: #FEBF00;
 }
 
+.text-opacity-50 {
+  opacity: 50%;
+}
+
 /*Form*/
 
 .help-block.with-errors {
@@ -830,8 +834,7 @@ footer .footer-nav a:hover {
 }
 
 #homepage-hero .main.carousel-item {
-  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FC4545;
-  background-attachment: fixed;
+  background-color: #FC4545;
 }
 
 
@@ -845,10 +848,39 @@ footer .footer-nav a:hover {
   background-attachment: fixed;
 }
 
+#homepage-hero .infographic.carousel-item {
+  background: url(../media/carousel/hero-infographic.png) top right no-repeat #293046;
+  background-size: contain;
+}
+
+#homepage-hero .etl-elt.carousel-item {
+  background: url(../media/carousel/hero-etl-elt.png) top right no-repeat #F8F8F8;
+  background-size: contain;
+}
+
+#homepage-hero .free-your-data.carousel-item {
+  background: url(../media/carousel/hero-free-your-data.jpg) top right no-repeat #000;
+  background-size: contain;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  #homepage-hero .carousel-item .pt-hero {
+   padding-top: 10rem;
+  }
+  
+  #homepage-hero .carousel-item h1,
+  #homepage-hero .carousel-item h2 {
+   font-size: 1.25rem;
+  }
+}
+
 
 
 #homepage-hero .carousel-caption {
   top: 8%;
+  color: #000;
 }
 
 .pattern-bg-right {

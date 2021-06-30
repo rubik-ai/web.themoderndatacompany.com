@@ -35,6 +35,13 @@
   <script src="/js/ScrollMagic.min.js"></script>
   <script src="/js/animation.gsap.min.js"></script>
   
+  
+  <!--Heap-->
+  <script type="text/javascript">
+  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+  heap.load("3089574208");
+  </script>
+  
 </head>
 
 
@@ -82,56 +89,85 @@
     <li data-bs-target="#homepage-hero" data-bs-slide-to="0" class="active"></li>
     <li data-bs-target="#homepage-hero" data-bs-slide-to="1" class=""></li>
     <li data-bs-target="#homepage-hero" data-bs-slide-to="2" class=""></li>
+    <li data-bs-target="#homepage-hero" data-bs-slide-to="3" class=""></li>
   </ol>
   <div class="carousel-inner">
-    <div class="main carousel-item active">
+    
+    <!--Infographic-->
+    <div class="infographic carousel-item active">
       <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="none"></rect>
       </svg>
-      <div class="carousel-caption text-center">
+      <div class="carousel-caption text-center text-lg-start">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-xl-8">
+          <div class="row">
+            <div class="col-12 col-lg-10 col-xl-7 pt-hero text-white">
+              <p class="font-weight-bold mb-2 text-opacity-50">Infographic</p>
+              <h1 class="mt-0 mb-5">How a Composable Data Fabric Meets the Needs of Today’s Evolving Enterprise</h1>
+              <p><a class="btn btn-light" href="/resources/evolving-enterprise-infographic.html" role="button" target="_blank">Learn How</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--ETL ELT-->
+    <div class="etl-elt carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="100%" height="100%" fill="none"></rect>
+      </svg>
+      <div class="carousel-caption text-center text-lg-start">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-10 col-xl-7 pt-hero">
+              <p class="font-weight-bold mb-2 text-muted text-opacity-50">White Paper</p>
+              <h1 class="mt-0 mb-5">Imagine a World with No More <span class="yellow-underline">ETLs</span> or <span class="yellow-underline">ELTs…</span></h1>
+              <p><a class="btn btn-primary" href="http://info.themoderndatacompany.com/evolution-of-data3" role="button" target="_blank">Learn How</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--The Modern Data Company-->
+    <div class="main carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <rect width="100%" height="100%" fill="none"></rect>
+      </svg>
+      <div class="carousel-caption text-center text-lg-start text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
               <h1 class="mb-2">The Modern <br>Data Company</h1>
               <p class="lead mb-5">Great data products are being powered with bad data. This causes companies to make bad decisions. There is a better way: the Modern way.</p>
               <p><a class="btn btn-light" href="get-a-demo.html" role="button">Get a Demo</a></p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="yellow carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <rect width="100%" height="100%" fill="none"></rect>
-      </svg>
-      <div class="carousel-caption text-center">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-xl-8">
-              <h2 class="h1 mb-4 text-dark">Build and Deploy New Data Services and Applications
-in <span class="strike-x"><img src="media/strike-x.svg" alt="Striked">Months</span> Weeks</h2>
-              <p><a class="btn btn-light" href="why-modern.html" role="button">Why Modern</a></p>
+            
+            <div class="col-12 col-lg-6 text-center text-lg-right">
+              <img src="media/carousel/hero-modern-data-company.png" alt="The Modern Data Company" class="img-responsive"/>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="dark carousel-item">
+    
+    <!--Free Your Data-->
+    <div class="free-your-data carousel-item">
       <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
         <rect width="100%" height="100%" fill="none"></rect>
       </svg>
-      <div class="carousel-caption text-center">
+      <div class="carousel-caption text-center text-lg-start">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-xl-8">
-              <h2 class="mb-2 h1">Free Your Data</h2>
-              <p class="lead mb-5">Focus on the <strong>value</strong> of your data, instead of the complex infrastructure behind it.</p>
+          <div class="row">
+            <div class="col-12 col-lg-10 col-xl-7 pt-hero text-white">
+              <h1 class="mt-0 mb-5"><span class="text-yellow">Free Your Data. </span>Focus on the value of your data, instead of the complex infrastructure behind it.</h1>
               <p><a class="btn btn-light" href="get-a-demo.html" role="button">Get a Demo</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
   <a class="carousel-control-prev" href="#homepage-hero" role="button" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
