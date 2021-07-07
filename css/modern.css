@@ -1067,3 +1067,9 @@ footer .footer-nav a:hover {
 .bcs-container-searchbox {
   display: none !important;
 }
+
+/*Resources landingpages*/
+
+.bg-casestudy-architecture {
+  background: url(/media/resources/casestudy-architecture.jpg) bottom left no-repeat #F8F8F8;
+}
