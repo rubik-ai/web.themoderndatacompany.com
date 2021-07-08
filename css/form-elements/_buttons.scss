@@ -1,0 +1,103 @@
+/* Button primary */
+.c-btn--primary {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  height: 80px;
+  padding: 28px 54px;
+  text-transform: lowercase;
+  border: none;
+  line-height: 26px;
+  font-size: 20px;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+	.c-btn--primary:hover {
+      color: #fff;
+	}
+
+
+/* Button CTA */
+.c-btn--cta {
+  display: inline-block;
+  color: #fff;
+  background: $color--red;
+  height: 80px;
+  padding: 28px 54px;
+  text-transform: lowercase;
+  border: none;
+  line-height: 26px;
+  font-size: 20px;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.c-btn--cta:hover {
+  color: #fff;
+}
+
+/* Button secondary */
+.c-btn--secondary {
+
+}
+
+	.c-btn--secondary:hover {
+
+	}
+
+
+/* Button tretiary */
+.c-btn--tretiary {
+
+}
+
+  .c-btn--tretiary:hover {
+
+  }
+
+
+
+/* Button helpers */
+
+.h-btn--full-width {
+  width: 100%;
+}
+
+.h-btn--big {
+  height: 48px;
+  font-size: 15px;
+  line-height: 48px;
+}
+
+.h-btn--min-width-medium {
+  min-width: 200px;
+}
+
+
+/* Responsive buttons */
+
+@include respond-to(r1260) {
+
+  .c-btn--primary,
+  .c-btn--cta {
+    height: 60px;
+    padding: 18px 35px;
+  }
+
+}
+
+
+@include respond-to(r768) {
+
+  .c-btn--primary,
+  .c-btn--cta {
+    height: auto;
+    min-height: 60px;
+    text-align: center;
+  }
+
+}
+

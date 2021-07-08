@@ -1,0 +1,189 @@
+/*------------------------------------*\
+  #Site footer
+\*------------------------------------*/
+
+.c-site-footer {
+
+}
+
+  .c-site-footer .h-site-block {
+
+  }
+
+  .c-site-footer > .c-box {
+    margin-top: 0;
+  }
+
+
+/* Footer top */
+
+.c-footer-top {
+  margin-bottom: 50px;
+  padding-top: 45px;
+}
+
+.c-footer-cta {
+  float: left;
+}
+
+.c-footer-cta__title {
+  font-size: 45px;
+  line-height: 1.222em;
+  margin-bottom: 5px;
+}
+
+.c-footer-cta__content {
+  font-size: 24px;
+}
+
+  .c-footer-cta__content a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+
+
+/**/
+
+.c-contacts-block {
+  border-left: 1px solid #000;
+  padding-left: 23px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+.c-footer-contacts {
+  float: right;
+  border-left: 1px solid #fff;
+}
+
+
+
+
+
+.c-footer-bottom {
+  padding-top: 60px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+
+/*------------------------------------*\
+  #Footer menu
+\*------------------------------------*/
+
+.c-footer-menu {
+  display: inline-block;
+  margin-left: 35px;
+  position: relative;
+  float: right;
+}
+
+.c-footer-menu:before {
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  top: 8px;
+  left: -13px;
+  content: '';
+  background: #fff;
+}
+
+
+  .c-footer-menu li {
+    margin-right: 10px;
+  }
+
+    .c-footer-menu a {
+      color: rgba(#fff, 0.8);
+    }
+
+
+/*------------------------------------*\
+  #Copyrights
+\*------------------------------------*/
+.c-site-copyrights {
+  display: inline-block;
+  margin: 0;
+  float: left;
+  margin-top: 9px;
+}
+
+
+/* Responsive footer */
+
+@include respond-to(r1600) {
+
+  .c-footer-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .c-footer-menu {
+    margin-left: 0;
+  }
+
+  .c-footer-menu:before {
+    display: none;
+  }
+
+
+}
+
+@include respond-to(r1260) {
+
+  .c-footer-menu li {
+    margin: 0 3px;
+  }
+
+  .c-footer-menu a {
+    font-size: 16px;
+    padidng: 5px 6px;
+  }
+
+}
+
+@include respond-to(r960) {
+
+  .c-footer-menu {
+    display: none;
+  }
+
+  .c-footer-cta {
+    float: none;
+  }
+
+  .c-footer-contacts {
+    float: none;
+    margin-top: 30px;
+  }
+
+}
+
+@include respond-to(r768) {
+
+  .c-footer-top {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .c-site-copyrights {
+    font-size: 16px;
+  }
+
+  .c-footer-cta__content {
+    font-size: 18px;
+  }
+
+
+}
+
+
+
+
+
+
+
