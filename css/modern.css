@@ -863,6 +863,11 @@ footer .footer-nav a:hover {
   background-size: contain;
 }
 
+#homepage-hero .friends-to-friends.carousel-item {
+  background: url(../media/carousel/friends-to-friends.svg) top right no-repeat #F8F8F8;
+  background-size: cover;
+}
+
 
 @media screen and (max-width: 768px) {
   
