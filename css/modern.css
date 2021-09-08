@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.72em;
 }
@@ -43,14 +43,17 @@ p.lead {
 }
 
 h1,.h1 {
-  font-family: "Gilroy-bold";
+  
   font-size: 56px;
   margin: 1em 0;
+  font-weight: 600;
 }
 
-h2 {
-  font-family: "Gilroy-bold";
+h2,
+.h2{
+  
   font-size: 46px;
+  font-weight: 600;
 }
 
 h2.custom {
@@ -59,7 +62,7 @@ h2.custom {
   right: 60px;
   margin: 0;
   margin-bottom: 84px;
-  font-family: "Gilroy-bold";
+  
   text-transform: uppercase;
 }
 
@@ -69,15 +72,18 @@ h2.custom sup {
 }
 
 
-h3 {
+h3, 
+.h3 {
   font-size: 24px;
   line-height: 1.4;
+  font-weight: 600;
 
 }
 
 .display-2 {
   font-size: 36px;
-  font-family: "Gilroy-bold";
+  font-weight: 600;
+  
 }
 
 h3 .serif,
@@ -96,10 +102,11 @@ h3 sup {
 
 
 h5 {
-  font-family: "Gilroy-bold";
+  
   margin-bottom: 14px;
   font-size: 18px;
   line-height: 1.4;
+  font-weight: 600;
 
 }
 
@@ -306,11 +313,21 @@ h5 {
 
 /*Header*/
 
+header {
+  position: relative;
+  z-index: 999;
+}
+
+header .logos-container {
+  width:125px;
+  height: 50px;
+}
+
 header .bg-light {
   background-color: #fff !important;
 }
 
-header:before {
+/*header:before {
     display: inline-block;
     position: fixed;
     content: "";
@@ -321,7 +338,7 @@ header:before {
     background: url(../img/bg-grid-small.svg) repeat-x left top;
     background-size: auto;
     z-index: 555;
-}
+}*/
 
 .navbar .rubik-temp-logo img {
   float: left;
@@ -334,6 +351,34 @@ header .fixed-top {
   top: 5px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+  font-weight: 600;
+}
+
+.navbar-light .navbar-nav .dropdown-item:focus, 
+.navbar-light .navbar-nav .dropdown-item:hover {
+    color: #1e2125;
+    background-color: #fff;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+.navbar-light .navbar-nav .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .155em;
+    content: "";
+    border-top: 5px solid;
+    border-right: 4px solid transparent;
+    border-bottom: 0;
+    border-left: 4px solid transparent;
+}
 
 /*Hero*/
 
@@ -849,7 +894,7 @@ footer .footer-nav a:hover {
 }
 
 #homepage-hero .infographic.carousel-item {
-  background: url(../media/carousel/hero-infographic.png) top right no-repeat #293046;
+  background: url(../media/carousel/hero-infographic-2.png) top right no-repeat #36B688;
   background-size: contain;
 }
 
@@ -864,8 +909,8 @@ footer .footer-nav a:hover {
 }
 
 #homepage-hero .friends-to-friends.carousel-item {
-  background: url(../media/carousel/friends-to-friends.svg) top right no-repeat #F8F8F8;
-  background-size: cover;
+  background: url(../media/carousel/friends-to-friends-robots.svg) bottom left repeat-x #F8F8F8;
+  background-size: auto;
 }
 
 
@@ -909,6 +954,12 @@ footer .footer-nav a:hover {
 
 .bg-data {
   background: url("../media/bg-data.jpg") top center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-people {
+  background: url("../media/bg-people.jpg") top center no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1061,12 +1112,21 @@ footer .footer-nav a:hover {
     line-height: 1;
 }
 
+
+.header-search .form-control {
+  font-size: 15px;
+}
+
 .header-search .form-control:focus {
     color: #212529;
     background-color: #fff;
     border-color: none;
     outline: 0;
     box-shadow: none;
+}
+
+.header-search.border-bottom {
+  border-bottom: 1px solid #000 !important;
 }
 
 .bcs-container-searchbox {
