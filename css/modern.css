@@ -320,7 +320,11 @@ header {
 
 header .logos-container {
   width:125px;
-  height: 50px;
+  height: 41px;
+}
+
+header .rubik-logo {
+  opacity: 0.4;
 }
 
 header .bg-light {
@@ -356,6 +360,10 @@ header .fixed-top {
   font-weight: 600;
 }
 
+.navbar-light .navbar-nav .active .nav-link {
+  color: #3AABF4;
+}
+
 .navbar-light .navbar-nav .dropdown-item:focus, 
 .navbar-light .navbar-nav .dropdown-item:hover {
     color: #1e2125;
@@ -383,7 +391,7 @@ header .fixed-top {
 /*Hero*/
 
 .intro {
-  min-height: 300px;
+  min-height: 245px;
 }
 
 
@@ -460,10 +468,6 @@ header .fixed-top {
 }
 
 /* Why Modern*/
-.intro.why-modern {
-  background: url(../img/why-modern-header.png) top right no-repeat #FC4545;
-}
-
 .hero.why-modern-first {
   background: url(../img/data-value.jpg) top left no-repeat;
   background-size: cover;
@@ -550,7 +554,7 @@ a.tag:hover {
 
 /* Why Modern*/
 .intro.why-modern {
-  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FEBF00;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #23DB95;
   background-attachment: fixed;
 }
 
@@ -563,7 +567,6 @@ a.tag:hover {
 
 /*Products*/
   .intro.products {
-    min-height: 500px;
     background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FEBF00;
     background-attachment: fixed;
   }
@@ -603,8 +606,11 @@ a.tag:hover {
 
 /* Company*/
 .intro.company {
-  background: url(../img/company-header.png) top right no-repeat #FEBF00;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FC4545;
+  background-attachment: fixed;
 }
+
+
 
 .hero.company-first {
   background: url(../img/bg-abstract.jpg) top left no-repeat;
@@ -847,12 +853,7 @@ footer .footer-nav a:hover {
     padding-bottom: 0;
   }
 
-  .intro.why-modern {
-    background: none;
-    background-color: #FC4545;
-  }
 
-  
   .intro.company {
     background: none;
     background-color: #FEBF00;
@@ -1030,7 +1031,6 @@ footer .footer-nav a:hover {
 .intro.blog {
   background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FEBF00;
   background-attachment: fixed;
-  min-height: 300px;
 }
 
 .intro.blog-post {
@@ -1054,7 +1054,7 @@ footer .footer-nav a:hover {
 }
 
 .post-article {
-  margin-top: -20rem;
+  margin-top: -15rem;
 }
 
 /*Search*/
@@ -1114,7 +1114,7 @@ footer .footer-nav a:hover {
 
 
 .header-search .form-control {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .header-search .form-control:focus {
@@ -1126,7 +1126,7 @@ footer .footer-nav a:hover {
 }
 
 .header-search.border-bottom {
-  border-bottom: 1px solid #000 !important;
+  border-bottom: 1px solid #fff !important;
 }
 
 .bcs-container-searchbox {
