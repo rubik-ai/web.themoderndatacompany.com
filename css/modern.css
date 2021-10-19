@@ -546,6 +546,21 @@ a.tag:hover {
   font-weight: 500;
 }
 
+.featured-tag-2 {
+  background-color: #F64546;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: block;
+  padding: 5px 10px;
+  line-height: 1;
+  font-weight: 500;
+}
+
 .resources-box h2 {
   font-size: 36px;
 }
@@ -1029,7 +1044,7 @@ footer .footer-nav a:hover {
   margin-top: -22rem;
 }
 .intro.blog {
-  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #FEBF00;
+  background: url(../media/hero-white-pattern-left-bg.svg) top left no-repeat #293045;
   background-attachment: fixed;
 }
 
@@ -1137,4 +1152,46 @@ footer .footer-nav a:hover {
 
 .bg-casestudy-architecture {
   background: url(/media/resources/casestudy-architecture.jpg) bottom left no-repeat #F8F8F8;
+}
+
+/*Hubspot newsletter form*/
+
+
+#hubspot-newsletter .hs-input {
+    border: none !important;
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    background-color: #fff !important;
+}
+
+#hubspot-newsletter label {
+    display: inline-block;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+    float: left;
+}
+
+#hubspot-newsletter fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    max-width: 500px;
+    margin-top: 1rem;
+}
+
+#hubspot-newsletter .hs-button {
+    color: #000;
+    background-color: #fff !important;
+    border: 2px solid #fff !important;
+    margin-top: 1rem;
+}
+
+#hubspot-newsletter .hs-button:hover,
+#hubspot-newsletter .hs-button:not(:disabled):not(.disabled).active,
+#hubspot-newsletter .hs-button:not(:disabled):not(.disabled):active {
+  border: 2px solid #fff !important;
+  background: transparent !important;
+  color: #fff !important;
 }
