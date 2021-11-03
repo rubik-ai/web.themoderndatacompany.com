@@ -135,6 +135,10 @@ h5 {
   color: #FEBF00;
 }
 
+.text-green {
+  color: #36B688;
+}
+
 .text-opacity-50 {
   opacity: 50%;
 }
@@ -895,7 +899,7 @@ footer .footer-nav a:hover {
 }
 
 #homepage-hero .main.carousel-item {
-  background-color: #FC4545;
+  background-color: #FEBF00;
 }
 
 
@@ -910,24 +914,16 @@ footer .footer-nav a:hover {
 }
 
 #homepage-hero .infographic.carousel-item {
-  background: url(../media/carousel/hero-infographic-2.png) top right no-repeat #36B688;
+  background: url(../media/carousel/hero-infographic-2.png) top right no-repeat #FC4545;
   background-size: contain;
 }
 
 #homepage-hero .etl-elt.carousel-item {
-  background: url(../media/carousel/hero-etl-elt.png) top right no-repeat #F8F8F8;
+  background: url(../media/carousel/hero-etl-elt.png) top right no-repeat #293046;
   background-size: contain;
 }
 
-#homepage-hero .free-your-data.carousel-item {
-  background: url(../media/carousel/hero-free-your-data.jpg) top right no-repeat #000;
-  background-size: contain;
-}
 
-#homepage-hero .friends-to-friends.carousel-item {
-  background: url(../media/carousel/friends-to-friends-robots.svg) bottom left repeat-x #F8F8F8;
-  background-size: auto;
-}
 
 
 @media screen and (max-width: 768px) {
