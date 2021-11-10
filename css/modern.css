@@ -304,6 +304,12 @@ h5 {
 
 }
 
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
 
 /*Steps*/
 
@@ -981,6 +987,11 @@ footer .footer-nav a:hover {
   background-size: contain;
 }
 
+.bg-culture {
+  background: url("../media/bg-culture.png") top right no-repeat ;
+  background-size: auto;
+}
+
 
 /*Spacing*/
 
@@ -1190,4 +1201,18 @@ footer .footer-nav a:hover {
   border: 2px solid #fff !important;
   background: transparent !important;
   color: #fff !important;
+}
+
+/*Careers*/
+
+.careers-pills .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border-radius: 0;
+}
+
+.careers-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #36B688;
 }

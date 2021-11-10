@@ -255,45 +255,9 @@ th {
 /*------------------------------------*\
   #FONTS AND SIMPLE CONTENT STYLES
 \*------------------------------------*/
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy-bold";
-  src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-strong,
-b,
-.c-banner__title,
-.c-box__title,
-.c-cta-box__title,
-.c-link--more,
-.c-content-block__title,
-.c-step:after,
-.c-step__title,
-.c-footer-cta__title,
-.c-btn--primary,
-.c-btn--cta,
-.c-case-item .c-side-block__title,
-.c-side-block__controls .c-link--more,
-.c-page-title,
-.c-case-item .c-notside-block,
-.h-styled-content h2,
-.h-styled-content h3 {
-  font-family: "Gilroy-bold";
-  font-weight: normal !important;
-}
 
 /* ------ Fonts ------ */
 body {
-  font-family: "Gilroy-bold";
   font-weight: normal !important;
   font-size: 16px;
   color: #000;
@@ -309,7 +273,6 @@ body {
 .c-cta-box__inner.h-bg--blue .h-styled-content p,
 .c-form-row .c-custom-checkbox,
 .c-box__pretitle {
-  font-family: "Libre Baskerville", serif;
 }
 
 
