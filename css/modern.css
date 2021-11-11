@@ -929,6 +929,11 @@ footer .footer-nav a:hover {
   background-size: contain;
 }
 
+#homepage-hero .fastest-path.carousel-item {
+  background: url(../media/carousel/hero-rocket.svg) top center no-repeat #2C3349;
+  background-size: contain;
+}
+
 
 
 
@@ -1079,6 +1084,10 @@ footer .footer-nav a:hover {
   margin-top: -15rem;
 }
 
+
+.randomize > * {display: none;}
+.randomize > *:nth-child(5) {display: block;}
+
 /*Search*/
 .bcs-host-div {
     background-color: transparent !important;
@@ -1216,3 +1225,5 @@ footer .footer-nav a:hover {
     color: #fff;
     background-color: #36B688;
 }
+
+

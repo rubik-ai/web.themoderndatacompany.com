@@ -132,6 +132,20 @@
         <span class="text-red">←</span> <a href="/blog.html" class="red-link">View all</a>
         <h3 class="mt-3">Business Intelligence</h3>
         <div class="row">
+          
+          <!-- Four Ways Companies Can Build Next-Level Analytics Capabilities-->
+          <div class="col-12 col-lg-6 col-xl-4 mb-4">
+            <div class="blog card h-100 rounded-0 border-0">
+              <a href="/blog/next-level-analytics.html" class="text-center"><img src="/media/blog/4-ways-analytics.jpg" class="rounded-0 img-fluid" alt="Reducing Risk and Increasing Data’s Value in Healthcare"></a>
+              <div class="card-body p-lg-3">
+                <h2 class="my-2 h3"><a href="/blog/next-level-analytics.html">Four Ways Companies Can Build Next-Level Analytics Capabilities</a></h2>
+                <p>Companies can build next level intelligence by leveraging four distinct pillars. This is what enterprises need to know to build powerful analytics.</p>
+              </div>
+              <div class="card-footer border-top-0 bg-white pt-0 pb-3">
+                <a href="/blog/next-level-analytics.html" class="red-link">Read more</a>
+              </div>
+            </div>
+          </div>
 
           <!-- Bulletproof your data strategy from the business side-->
           <div class="col-12 col-lg-6 col-xl-4 mb-4">
@@ -359,6 +373,47 @@ src="https://www.facebook.com/tr?id=1096024097529061&ev=PageView&noscript=1"
 
 
     </div>
+
+  <script>
+
+function isvisible(obj) {
+  return obj.offsetWidth > 0 && obj.offsetHeight > 0;
+}
+var shuffle = function() {
+      elements = document.querySelectorAll('.randomize');
+      Array.prototype.forEach.call(elements, function(parentel, i){
+        var children = parentel.children;
+        children = Array.prototype.slice.call(children, 0);
+        children = Array.prototype.sort.call(children, function(a, b) {
+            return Math.random() - 0.5;
+        });
+        for(var i = 0, l = children.length; i < l; i++) parentel.append(children[i]);
+      });
+};
+shuffle();
+
+elements = document.querySelectorAll('.randomize');
+Array.prototype.forEach.call(elements, function(parentel, i){
+    children = parentel.children;
+    Array.prototype.forEach.call(children, function(el, j){
+        if(isvisible(el)) {
+            if(el.getAttribute('data-src')) el.setAttribute('src',el.getAttribute('data-src'));
+            if(el.querySelector('img')) {
+                Array.prototype.forEach.call(el.querySelectorAll('img'), function(imgel, j){
+                    imgel.setAttribute('src',imgel.getAttribute('data-src'));
+                });
+            }
+            if(el.querySelector('*')) {
+                Array.prototype.forEach.call(el.querySelectorAll('*'), function(subel, j){
+                    subel.setAttribute('style',imgel.getAttribute('data-style'));
+                });
+            }
+        }
+    });
+});
+
+</script>
+
   </body>
 
 </html>

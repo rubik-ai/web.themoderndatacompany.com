@@ -212,6 +212,17 @@
         <div class="card-body p-4">
           <h3 class="mb-5 text-center">People Also Read</h3>
           
+          <!--Four Ways Companies Can Build Next-Level Analytics Capabilities-->
+          <a href="/blog/next-level-analytics.html" class="d-flex gap-3 mb-4">
+             <img src="/media/blog/4-ways-analytics.jpg" width="100" height="51" class="rounded-0 flex-shrink-0" alt="Four Ways Companies Can Build Next-Level Analytics Capabilities">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <p class="mb-0 mt-0">Four Ways Companies Can Build Next-Level Analytics Capabilities</p>
+              </div>
+            </div>
+          </a>
+          
+          
           <!--Reducing Risk and Increasing Data’s Value in Healthcare-->
           <a href="/blog/data-value-in-healthcare.html" class="d-flex gap-3 mb-4">
              <img src="/media/blog/data-value-in-healthcare.jpg" width="100" height="51" class="rounded-0 flex-shrink-0" alt="Reducing Risk and Increasing Data’s Value in Healthcare">
@@ -279,9 +290,38 @@
       <div class="blog card rounded-0 border-0 bg-yellow mb-3">
         <div class="card-body text-center p-5">
           <div class="featured-tag-2">Featured</div>
-          <img src="../media/resources/whitepaper-defense.png" width="206" height="225" alt="A Modern Data Strategy for the U.S. Department of Defense" class="mb-3">
-          <h3 class="mb-4 mt-0">A Modern Data Strategy for the U.S. Department of Defense</h3>
-          <a href="https://info.themoderndatacompany.com/modern-data-strategy-for-defense" class="btn btn-primary">Download</a>
+          <ul class="randomize list-unstyled">
+            <!--A Modern Data Strategy for the U.S. Department of Defense-->
+            <li>
+              <img data-src="../media/resources/whitepaper-defense.png" width="206" height="225" alt="A Modern Data Strategy for the U.S. Department of Defense" class="mb-3">
+              <h3 class="mb-4 mt-0">A Modern Data Strategy for the U.S. Department of Defense</h3>
+              <a href="https://info.themoderndatacompany.com/modern-data-strategy-for-defense" class="btn btn-primary">Download</a>         
+            </li>
+            <!--Modern DataOS Overview-->
+            <li>
+              <img data-src="../media/resources/dataos-overview.png" width="206" height="225" alt="Modern DataOS Overview" class="mb-3">
+              <h3 class="mb-4 mt-0">Modern DataOS Overview</h3>
+              <a href="../media/resources/download/DataOS_Solution_Brief.pdf" class="btn btn-primary">Download</a>       
+            </li>
+            <!--A Modern Data Strategy for Enterprises-->
+            <li>
+              <img data-src="../media/resources/whitepaper-strategy-enteprises.png" width="206" height="225" alt="A Modern Data Strategy for Enterprises" class="mb-3">
+              <h3 class="mb-4 mt-0">A Modern Data Strategy for Enterprises</h3>
+              <a href="https://info.themoderndatacompany.com/modern-data-strategy-for-enterprises" class="btn btn-primary">Download</a>       
+            </li>
+            <!--Data Security and Governance in DataOS-->
+            <li>
+              <img data-src="../media/resources/whitepaper-data-security.png" width="206" height="225" alt="Data Security and Governance in DataOS" class="mb-3">
+              <h3 class="mb-4 mt-0">Data Security and Governance in DataOS</h3>
+              <a href="https://info.themoderndatacompany.com/data-security-and-governance" class="btn btn-primary">Download</a>       
+            </li>
+            <!--DataOS the Modern Data Fabric-->
+            <li>
+              <img data-src="../media/resources/whitepaper-dataos-modern-data-fabric.png" width="206" height="225" alt="DataOS the Modern Data Fabric" class="mb-3">
+              <h3 class="mb-4 mt-0">DataOS the Modern Data Fabric</h3>
+              <a href="https://info.themoderndatacompany.com/dataos-modern-data-fabric" class="btn btn-primary">Download</a>       
+            </li>
+          </ul>
         </div>
       </div> 
       
@@ -524,6 +564,47 @@ src="https://www.facebook.com/tr?id=1096024097529061&ev=PageView&noscript=1"
 
 
     </div>
+
+  <script>
+
+function isvisible(obj) {
+  return obj.offsetWidth > 0 && obj.offsetHeight > 0;
+}
+var shuffle = function() {
+      elements = document.querySelectorAll('.randomize');
+      Array.prototype.forEach.call(elements, function(parentel, i){
+        var children = parentel.children;
+        children = Array.prototype.slice.call(children, 0);
+        children = Array.prototype.sort.call(children, function(a, b) {
+            return Math.random() - 0.5;
+        });
+        for(var i = 0, l = children.length; i < l; i++) parentel.append(children[i]);
+      });
+};
+shuffle();
+
+elements = document.querySelectorAll('.randomize');
+Array.prototype.forEach.call(elements, function(parentel, i){
+    children = parentel.children;
+    Array.prototype.forEach.call(children, function(el, j){
+        if(isvisible(el)) {
+            if(el.getAttribute('data-src')) el.setAttribute('src',el.getAttribute('data-src'));
+            if(el.querySelector('img')) {
+                Array.prototype.forEach.call(el.querySelectorAll('img'), function(imgel, j){
+                    imgel.setAttribute('src',imgel.getAttribute('data-src'));
+                });
+            }
+            if(el.querySelector('*')) {
+                Array.prototype.forEach.call(el.querySelectorAll('*'), function(subel, j){
+                    subel.setAttribute('style',imgel.getAttribute('data-style'));
+                });
+            }
+        }
+    });
+});
+
+</script>
+
   </body>
 
 </html>
