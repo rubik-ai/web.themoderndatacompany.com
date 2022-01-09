@@ -200,6 +200,10 @@ h5 {
   background-color: #50B6FF;
 }
 
+.bg-dark{
+   background-color: #2B323C; 
+}
+
 /*Spacing*/
 
 @media (min-width: 992px) {
