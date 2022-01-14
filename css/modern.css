@@ -664,6 +664,12 @@ a.tag:hover {
   background: url(../img/bg-form.png) top right no-repeat #F8F8F8;
 }
 
+.intro.netzero {
+  background: url(../media/hero-netzero.jpg) center right no-repeat #2B323C;
+  background-size: auto;
+}
+
+
 
 
 /*Privacy Policy*/
@@ -1230,4 +1236,32 @@ footer .footer-nav a:hover {
     background-color: #36B688;
 }
 
+
+/*Netzero landingpage*/
+.bg-netzero-value-stack {
+  background: url("../media/bg-netzero-value-stack.jpg") top center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-netzero-dataos {
+  background: url("../media/bg-netzero-dataos.jpg") top center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.floating-netzero-link {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.border-top-lite {
+  border-top: 1px solid rgba(255,255,255,0.17);
+}
+
+.border-bottom-lite {
+  border-bottom: 1px solid rgba(255,255,255,0.17);
+}
 
