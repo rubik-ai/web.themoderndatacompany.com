@@ -1,0 +1,38 @@
+.c-form-row,
+.c-form-item {
+    position: relative;
+}
+
+input:focus + .c-floating-label,
+textarea:focus + .c-floating-label,
+.c-floating-label {
+    position: absolute;
+    left: 0px;
+    top: -19px;
+    font-size: 13px;
+    padding-left: 0;
+    opacity: 1;
+    @include transition(top 0.2s, font-size 0.2s, opacity 0.2s);
+    pointer-events: none;
+    color: #111111;
+}
+
+
+:placeholder-shown ~ .c-floating-label {
+    top: 9px;
+    font-size: 12px;
+    opacity: 1;
+    left: 12px;
+}
+
+.placeholder-shown.c-floating-label {
+    top: 9px;
+    font-size: 12px;
+    opacity: 1;
+    left: 12px;
+}
+
+.c-floating-label span {
+    color: #99698c;
+    margin-left: 5px;
+}

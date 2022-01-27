@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Modern
+email: hi@themoderndatacompany.com
+description: 'ffff'
+url: 'https://www.themoderndatacompany.com'
+baseurl: ''
+#permalink: pretty
+timezone: UTC
+
+# Build settings
+markdown: kramdown
+#paginate_multiple:
+#- paginate: 5
+#  paginate_path: '/blog/long-view/page:num/'
+#  sub_dir: '/long-view'
+#- paginate: 5
+#  paginate_path: '/blog/txt-record/page:num/'
+#  sub_dir: '/txt-record'
+
+#collections:
+#  posts:
+#    permalink: /blog/:categories/:title-:year:month:day/
+
+kramdown:
+    smart_quotes: ["apos", "apos", "quot", "quot"]
+
+#gems:
+#  - jekyll-paginate
+#  - jekyll-paginate-multiple
+# - jekyll-mtime # Only in recent jekyll using plugins:
+
+# Webrick settings, only applied when using "jekyll serve" for a local dev instance
+webrick:
+  headers:
+    X-Content-Type-Options: "nosniff"
+    X-Frame-Options: "SAMEORIGIN"
+    X-XSS-Protection: "1;mode=block"
+    #Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline' https://apis.google.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://www.google-analytics.com https://js.hs-analytics.net/; child-src https://www.google.com/recaptcha/; img-src 'self' 'unsafe-inline' https://ssl.gstatic.com/; style-src 'self' 'unsafe-inline' https://www.gstatic.com/recaptcha/"
+    Content-Security-Policy: "default-src * 'unsafe-inline'; script-src * 'unsafe-inline'; img-src *; style-src * 'unsafe-inline'"

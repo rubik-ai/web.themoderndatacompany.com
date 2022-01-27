@@ -1,0 +1,351 @@
+﻿/*------------------------------------*\
+  #FONTS AND SIMPLE CONTENT STYLES
+\*------------------------------------*/
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+  url('../fonts/Gilroy-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-bold';
+  src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+strong,
+b,
+.c-banner__title,
+.c-box__title,
+.c-cta-box__title,
+.c-link--more,
+.c-content-block__title,
+.c-step:after,
+.c-step__title,
+.c-footer-cta__title,
+.c-btn--primary,
+.c-btn--cta,
+.c-case-item .c-side-block__title,
+.c-side-block__controls .c-link--more,
+.c-page-title,
+.c-case-item .c-notside-block,
+.h-styled-content h2,
+.h-styled-content h3 {
+  font-family: 'Gilroy-bold';
+  font-weight: normal !important;
+}
+
+
+/* ------ Fonts ------ */
+body {
+    font-family: 'Gilroy-bold';
+    font-weight: normal !important;
+	font-size: 16px;
+    color: #000;
+}
+
+
+
+.c-intro__info a,
+.c-content-block__subtitle,
+.c-box__subtitle,
+.c-footer-cta__content,
+.h-text--big .h-styled-content p,
+.c-side-block,
+.c-banner__subtitle,
+.c-cta-box__inner.h-bg--blue .h-styled-content p,
+.c-form-row .c-custom-checkbox,
+.c-box__pretitle {
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+.c-site,
+.nav-link {
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* ------ */
+a {
+	text-decoration: none;
+	color: #000;
+  @include transition(color 0.3s, border 0.3s, background 0.3s);
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+
+// Hover styles for devices supporting hover
+
+@media not all and (hover: none), (-ms-high-contrast: none) {
+
+  a:hover {}
+
+}
+
+
+img {
+  vertical-align: top;
+}
+
+
+p {
+	line-height: 1.2em;
+	margin: 1em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 1em 0;
+}
+
+:focus {
+	outline: none;
+}
+
+
+/* ------ Styled content ------ */
+
+.h-styled-content {
+
+}
+
+	.h-styled-content h1 {
+
+	}
+
+	.h-styled-content h2 {
+      margin-top: 2em;
+      margin-bottom: 0.3em;
+      font-size: 28px;
+      line-height: 1.4em;
+	}
+
+	.h-styled-content h3 {
+      margin-top: 2em;
+      margin-bottom: 0.3em;
+      font-size: 20px;
+      line-height: 1.4em;
+	}
+
+    .h-styled-content h4 {
+      font-size: 21px;
+      font-weight: normal;
+      margin-top: 2em;
+      margin-bottom: 0.3em;
+    }
+
+    .h-styled-content h5 {
+
+    }
+
+    .h-styled-content h6 {
+
+    }
+
+	.h-styled-content p {
+      color: #808080;
+      font-size: 18px;
+      line-height: 1.714em;
+	}
+
+    .h-styled-content p:first-child {
+      margin-top: 0
+    }
+
+    .h-styled-content p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    .h-styled-content h2 + p,
+    .h-styled-content h3 + p,
+    .h-styled-content h4 + p,
+    .h-styled-content h5 + p {
+      margin-top: 5px;
+    }
+
+.h-styled-content a,
+.h-styled-content p a,
+.h-styled-content li a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.h-styled-content p strong {
+  color: #000;
+}
+
+/* Content in form */
+
+.c-form-default .h-styled-content {
+
+}
+
+.c-form-default .h-styled-content a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+/* Lists */
+
+.h-styled-content ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.h-styled-content ul ul {
+  padding-bottom: 15px;
+}
+
+.h-styled-content li:last-child ul {
+  padding-bottom: 0;
+}
+
+.h-styled-content ul:last-child {
+  margin-bottom: 0;
+}
+
+
+.h-styled-content li {
+  color: #808080;
+  font-size: 21px;
+  line-height: 1.714em;
+  padding-left: 35px;
+  position: relative;
+}
+
+.h-styled-content li:before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #000;
+  left: 0;
+  top: 15px;
+}
+
+.h-styled-content ul ul li:before {
+  background: #808080;
+}
+
+.h-styled-content ul ul ul li:before {
+  background: none;
+  border: 1px solid #808080;
+}
+
+
+  /* Tables */
+
+.h-styled-content table {
+	width: 100%;
+}
+
+	.h-styled-content th,
+	.h-styled-content td {
+		padding: 8px 16px;
+		border: 1px solid #eee;
+        color: #808080;
+        font-size: 21px;
+        line-height: 1.714em;
+      vertical-align: top;
+	}
+
+		.h-styled-content th {
+			text-align: left;
+          color: #000;
+		}
+
+		.h-styled-content td {
+
+		}
+
+.h-styled-content td a {
+  word-break: break-word;
+}
+
+
+/* Lists */
+
+.h-styled-content ul {
+
+}
+
+.h-styled-content ol {
+
+}
+
+.h-styled-content li {
+
+}
+
+
+.h-styled-content .h-table-wrap {
+  overflow-x: auto;
+}
+
+
+/**/
+
+.h-styled-content hr {
+	border: 0;
+	color: #ccc;
+	background-color: #ccc;
+	height: 1px;
+	margin: 1em 0;
+}
+
+
+/* Responsive typography */
+
+@include respond-to(r768) {
+
+  .h-styled-content p,
+  .h-styled-content li,
+  .h-styled-content th,
+  .h-styled-content td {
+    font-size: 16px;
+  }
+
+  .h-styled-content h2:first-child,
+  .h-styled-content h3:first-child,
+  .h-styled-content h4:first-child,
+  .h-styled-content h5:first-child {
+    margin-top: 15px;
+  }
+
+  .h-styled-content h2 {
+    font-size: 24px;
+  }
+
+  .h-styled-content th,
+  .h-styled-content td {
+    padding: 5px;
+  }
+
+  .h-styled-content table {
+    display: block;
+    min-width: 600px;
+  }
+
+
+}
