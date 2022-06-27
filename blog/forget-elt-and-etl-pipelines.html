@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="format-detection" content="telephone=no">
-  <title>The Role of DataOps in Data Management - MODERN</title>
-	<meta name="description" content="Find out why DataOps is more than DevOps for Data and what it means for your data management.">
+  <title>Forget ELT and ETL Pipelines – You Need DataOS - MODERN</title>
+	<meta name="description" content="ELT and ETL pipelines are the gold standard, but a data operating system is changing all that. Read to discover how.">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <!--  Essential META Tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="The Role of DataOps in Data Management">
-  <meta property="og:description" content="Find out why DataOps is more than DevOps for Data and what it means for your data management.">
-  <meta property="og:url" content="https://themoderndatacompany.com/blog/dataops-data-management.html" />
+  <meta property="og:title" content="Forget ELT and ETL Pipelines – You Need DataOS">
+  <meta property="og:description" content="ELT and ETL pipelines are the gold standard, but a data operating system is changing all that. Read to discover how.">
+  <meta property="og:url" content="https://themoderndatacompany.com/blog/forget-elt-and-etl-pipelines.html" />
   <meta property="og:site_name" content="The Modern Data Company" />
   <meta property="og:image" content="https://themoderndatacompany.com/media/blog/dataops-management.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -145,20 +145,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="row"> 
     <div class="col-12 col-lg-8 mb-4">
       <div class="blog card rounded-0 border-0">
-         <img src="/media/blog/dataops-management.jpg" class="img-fluid rounded-0" alt="The Role of DataOps in Data Management">
+         <img src="/media/blog/forget-elt-and-etl-pipelines.jpg" class="img-fluid rounded-0" alt="The Role of DataOps in Data Management">
         <div class="card-body p-lg-5">       
           <!--Post header-->
             <div class="row">
               <div class="col-12 mb-5">
-                <p class="my-0">June 10, 2022 <span class="text-muted">- 4 minutes to read</span> <!--<a href="/media/blog/download/Four%20Things%20%20We%20Learned%20in%202020.pdf" target="_blank" class="red-link" alt="PDF version">PDF version</a></p>-->
+                <p class="my-0">June 27, 2022 <span class="text-muted">- 4 minutes to read</span> <!--<a href="/media/blog/download/Four%20Things%20%20We%20Learned%20in%202020.pdf" target="_blank" class="red-link" alt="PDF version">PDF version</a></p>-->
               </div>
 
               <div class="col-lg-12">
-                <h1 class="mt-0 mb-5">The Role of DataOps in Data Management</h1>
+                <h1 class="mt-0 mb-5">Forget ELT and ETL Pipelines – You Need DataOS</h1>
                 <!--Author-->
                 <div class="middle mb-5">
-                  <img src="/media/blog/author-paul.jpg" class="me-32" alt="E. Wallace">
-                  <span class="lead fw-bold ">By  P. Scott</span>
+                  <img src="/media/blog/author-wallace.jpg" class="me-32" alt="E. Wallace">
+                  <span class="lead fw-bold ">By  E. Wallace</span>
                 </div>
               </div>
 
@@ -170,24 +170,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
         
           
-            <p>DataOps (Data Operations) is a data management framework that helps organizations streamline, automate, and continuously improve their data lifecycle from ingestion and integration through to analytics, archiving, and disposal. That’s a broad description of what DataOps does for your organization. This article will go into more detail about the origins and basic principles of DataOps and its benefits for data management.</p>
+            <p>As enterprises modernize their data architecture, they have to make challenging decisions about legacy systems. Not all organizations are ready to offload their ETL pipelines. Unless decision-makers are also tech experts, they may not realize that ETL pipelines continue to exist within their data stack. However, digital transformation requires a comprehensive look at what’s going on underneath the hood, so let’s explore the humble ETL pipeline and its place in the modern data world.</p>
             
-            <h2>Origins of DataOps</h2>
+            <h2>What is an ETL pipeline?</h2>
             
-            <p>DataOps originated from the need to handle the ever-increasing volume of data inundating nearly every business today. The term was coined in 2017 and attracted Gartner’s attention in 2018, and since then it has grown in popularity year by year. It combines aspects of three common methodologies from the worlds of both software development and manufacturing: DevOps, Agile, and Lean Manufacturing.</p>
-            <p>Organizations need to apply standard, automated processes to govern the flow of data from one step of the data lifecycle to the next — from data ingestion and transformation to analysis and reporting. From DevOps, DataOps took the idea of continuous integration/continuous deployment. DataOps automates many processes using code in a variety of languages. The code is developed using central repositories with version control to avoid overwrites and duplicate effort. Updated code is then merged seamlessly into production and the process iterates repeatedly.</p> 
-            <p>From Agile methodology, DataOps took the idea of rapid development in short sprints of one to two weeks, and constant feedback from stakeholders about how code and analytics could be improved. Agile methodology is also a feature of DevOps. Like DevOps, DataOps adapts agile tools such as Scrum and Kanban to help improve the functionality of code and analytics in response to unexpected or rapidly changing requirements.</p>
-            <p>Given the similarities noted above, it’s tempting to think of DataOps as nothing more than a specialized implementation of DevOps applied to data. The distinction, though, is in how DataOps looks at data — as a manufactured product of data pipelines (sometimes called “data factories” to drive home the point). With this in mind, DataOps also draws from Lean Manufacturing the ideas of Statistical Process Control (SPC), end-to-end thinking, and continuous incremental process improvement. Code reuse is also part of this principle to make the development process more efficient.</p>
-            <p>Another aspect of DataOps is the philosophy of Total Quality Management, using continuous testing, monitoring, and benchmarking along with SPC to detect issues before they turn into major problems.</p>
-            <h2>Why Do You Need DataOps?</h2>
-            <p>In the modern data ecosystem, every business unit has its own data pipelines (often several of them) producing data for their particular needs. Without DataOps, every data pipeline becomes a data silo. There is no collaboration on features or code reuse. Each unit solves the same problems over and over again, with a lot of manual procedures and little consistency.</p> 
-            <p>Data is riddled with errors and defects. There are so many inconsistencies between data products that business users don’t trust any data but their own and there is no single source of truth. There is little or no communication between business units, meaning that institutional knowledge about data sources, data quality, or even the meanings of column labels in source data sets become lost. Delivery times are so long that many users make decisions with insufficient data or no data at all, because they can’t afford to wait.</p>
-            <p>Using test automation, code repositories, parallel development, collaboration tools, orchestration frameworks, and workflow automation, DataOps accelerates delivery times, minimizes data defects, and enables continuous improvement of data, data products, and pipeline processes. It assists data management at every stage of the data lifecycle.</p>
-            <h2>It Begins with Cultural Transformation</h2>
-            <p>Most discussions of DataOps focus on technical tools and methods. However, DataOps begins with a major shift in an organization’s data culture. It can’t be implemented overnight. Business users have to get used to the idea of cooperation and collaboration across the organization. They have to learn to speak up when they spot problems or ways to improve data products and processes, and to understand the data pipelines they use from start to finish.</p>
-            <p>Leaders measure progress using productivity metrics and inform their teams to continuously search for new ways to cut wasted effort, streamline steps, automate processes, and increase output.</p>
-            <p>Unless organizations change the way their people look at data, including its production and application, no amount of technical skill can help them. DataOps relies on collaboration between users, developers, and IT to improve a company’s data management.</p>
+            <p>ETL stands for “Extract, Transform, Load.” An ETL pipeline enables data analysis behind-the-scenes and offers a repeatable process to unify data from multiple sources. It operates in three stages:</p>
+            
+            <ol>
+            <li>Extract: Data from all involved sources moves from the source to a staging area. Since it may not be possible to move all data from all sources at the same time, the staging area helps reduce bottlenecks.</li>
+                
+            <li>Transform: Raw data becomes data models—structured, cleaned, and formatted without duplicates or incorrect entries.</li>
+            
+            <li>Load: Now that the transformed data is in a usable format, it can be uploaded to the warehouse.</li>
+            
+            </ol>
+            
+            <p>ETL pipelines have been in use since the 1970s and have changed a lot in the way businesses derive value from data. If an organization has been around for a few decades, there’s a good chance ETL pipelines are present in the data stack.</p> 
 
+            
+            <h2>ETLs can cause trouble for organizations in digital transformation</h2>
+            
+            <p>Originally, ETL pipelines changed data analysis because they automated much of the mundane work required to retrieve and scrub data. Most data fell into a structured model originating in databases and operational systems designed for data like this. ETL pipelines were formatted for specific users and allowed IT to avoid tedious code-writing just to query data.</p> 
+            
+            <p>Data today isn’t so structured. Organizations are harvesting data from social media, images, voice recordings…nothing is “neat” about data anymore. It’s bigger and messier and only becoming more so as people live out their lives online.</p>
+            
+            <p>ETL pipelines can’t keep up. They’re too rigid and don’t transfer well from one set of users to another or from one type of data to another. They require a heavy investment from IT and slow down insights needed for decisions today, not months from now.</p>
+            
+            <p>Some organizations replaced ETL with ELT, where data loading and transforming are decoupled to reduce those bottlenecks. However, even ELTs — while more efficient than ETL pipelines — still have one key obstacle for a truly transformed data stack: they don’t facilitate self-service for the nontechnical user.</p>
+            
+            <h2>Enterprises can enable data self-service with a data operating system</h2>
+            
+            <p>ETL and ELT pipelines require technical know-how to build, maintain, and troubleshoot, but companies need everyone in the organization to become data stakeholders. Departments don’t have time to wait months to receive data-backed insights to make decisions. They need access to data now, and they need the support to build reports and queries without overloading IT with requests.</p>
+            
+            <p>A data operating system like DataOS from The Modern Data Company (Modern) offers a new way to manage data. It’s a connective tissue for an entire data ecosystem, uniting tools and data sources from all over the enterprise. Nontechnical users can search for the data they need using a simple, Google-like approach and work directly with data without making copies or moving it.</p>
+            
+            <p>Without data movement, enterprises experience fewer risks in security and can implement organization-wide governance policies that remain consistent no matter the user. For example, the marketing department can view critical marketing data with columns of sensitive information removed through a marketing Data Lens. Legal departments can see all columns and rows through their own Data Lens.</p>
+
+            <p>Both departments can accomplish their own data transformation through a right-to-left engineering approach that abstracts data complexity — the system removes the need for specialized technical knowledge to build the right pipelines. Users drag and drop the functions they need, and DataOS takes over to create exactly the right thing.</p>
+            
+            
+            <h2>Move from pipeline usage to data ownership</h2>
+            
+            <p>ETL pipelines were a significant improvement over hand-coding, but DataOS takes data analysis to the edge with a comprehensive, connective, and consistent data solution. Business users gain insights in near real-time because they’re taking ownership of the data process themselves. Organizations can finally free data for all stakeholders safely and efficiently, and IT no longer needs to build tedious ETL or ELT pipelines. </p>
+            
+            <p>To see it work specifically for your organization and to understand the scope of what DataOS can do for your organization’s data, download our latest white paper: “<a href="https://info.themoderndatacompany.com/modern-data-strategy-for-enterprises" class="red-link">A Modern Data Strategy for Enterprises</a>”</p>
+            
         </div>
       </div>
     </div>
