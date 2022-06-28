@@ -26,8 +26,13 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-
+    
+    
+<!--Custom fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
   <!--  Non-Essential, But Recommended -->
 
   <meta property="og:site_name" content="The Modern Data Company">  
@@ -85,8 +90,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav class="navbar navbar-expand-xl navbar-light bg-light py-3 shadow-sm">
     <div class="container-fluid">
       <div class="d-block me-3 ms-3 mt-1 logos-container">
-      <a href="/" class="pt-1"><img src="/img/main-logo-small.svg" alt="The Modern Data Company"></a>
-      <a href="https://rubik.ai/old/#home" class="rubik-logo pt-0 float-end" target="_blank"><img src="/media/rubik.svg" alt="Rubik"></a>
+      <a href="/" class="pt-1"><img src="/img/modern_main_logo.svg" alt="The Modern Data Company"></a>
+    <!--  <a href="https://rubik.ai/old/#home" class="rubik-logo pt-0 float-end" target="_blank"><img src="/media/rubik.svg" alt="Rubik"></a>-->
       </div>  
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -144,15 +149,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <li data-bs-target="#homepage-hero" data-bs-slide-to="5" class=""></li>
   </ol>
   <div class="carousel-inner">
-    <!--Net Zero-->
-    <div class="netzero carousel-item active">
+      
+      
+      <!--Infographic-->
+    <div class="infographic carousel-item active">
       <div class="carousel-caption text-center text-lg-start">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-10 col-xl-8 pt-hero text-white">
-              <h1 class="mt-lg-5 mb-2">Climate Change<br> is Here</h1>
+              <p class="font-weight-bold mb-2">Infographic</p>
+              <h1 class="mt-0 mb-5">How a Composable Data Fabric Meets the Needs of Today’s Evolving Enterprise</h1>
+              <p><a class="btn btn-light" href="/resources/evolving-enterprise-infographic.html" role="button" target="_blank">Learn How</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      
+    <!--Net Zero-->
+    <div class="netzero carousel-item">
+      <div class="carousel-caption text-center text-lg-start">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-10 col-xl-8 pt-hero text-white">
+              <h1 class="slider mt-lg-5 mb-2">Climate Change<br> is Here</h1>
               <p class="lead mb-5">Net Zero is the Necessary Response</p>
-              <p><a class="btn btn-primary" href="/netzero.html" role="button">Learn more</a></p>
+              <p><a class="btn btn-secondary" href="/netzero.html" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -164,8 +187,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="carousel-caption text-center text-lg-start">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-10 col-xl-8 pt-hero text-white">
-              <h1 class="mt-3 mb-5">The Fastest<br> Path from Data<br> to Decisions</h1>
+            <div class="col-12 col-lg-10 col-xl-8 pt-hero">
+              <h1 class="mt-3 mb-5">The Fastest Path<br>from Data to<br> Decisions</h1>
               <p><a class="btn btn-primary" href="/products.html" role="button">Learn More</a></p>
             </div>
           </div>
@@ -173,34 +196,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
-    <!--Infographic-->
-    <div class="infographic carousel-item">
-      <div class="carousel-caption text-center text-lg-start">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-10 col-xl-8 pt-hero text-white">
-              <p class="font-weight-bold mb-2 text-opacity-50">Infographic</p>
-              <h1 class="mt-0 mb-5">How a Composable Data Fabric Meets the Needs of Today’s Evolving Enterprise</h1>
-              <p><a class="btn btn-light" href="/resources/evolving-enterprise-infographic.html" role="button" target="_blank">Learn How</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <!--Free Your Data-->
-    <div class="bg-light carousel-item">
+    <div class="free-data carousel-item">
       <div class="carousel-caption text-center text-lg-start">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-8 col-xl-9">
-              <h1 class="mb-4"><span class="text-yellow">Free Your Data. </span>Focus on the value of your data, instead of the complex infrastructure behind it.</h1>
-              <p><a class="btn btn-primary" href="get-a-demo.html" role="button">Get a Demo</a></p>
+            <div class="col-12 col-lg-10 col-xl-8 pt-hero">
+              <h1 class="mb-4 text-white">Free Your Data. Focus on the value of your data, instead of the complex infrastructure behind it.</h1>
+              <p><a class="btn btn-light" href="get-a-demo.html" role="button">Get a Demo</a></p>
             </div>
 
-            <div class="col-12 col-lg-4 col-xl-3 text-center text-lg-right">
-              <img src="media/carousel/modern-man.png" alt="The Modern Data Company" class="img-responsive" />
-            </div>
           </div>
         </div>
       </div>
@@ -212,15 +219,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="carousel-caption text-center text-lg-start">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-6">
-              <h1 class="mb-2">The Modern <br>Data Company</h1>
-              <p class="lead mb-5">Great data products are being powered with bad data. This causes companies to make bad decisions. There is a better way: the Modern way.</p>
-              <p><a class="btn btn-primary" href="get-a-demo.html" role="button">Get a Demo</a></p>
+            <div class="col-12 col-lg-10 col-xl-8 pt-hero">
+              <h1 class="mb-2 text-white">The Modern <br>Data Company</h1>
+              <p class="lead mb-5 text-white">Great data products are being powered with bad data. This causes companies to make bad decisions. There is a better way: the Modern way.</p>
+              <p><a class="btn btn-light" href="get-a-demo.html" role="button">Get a Demo</a></p>
             </div>
 
-            <div class="col-12 col-lg-6 text-center text-lg-right">
-              <img src="media/carousel/hero-modern-data-company.png" alt="The Modern Data Company" class="img-responsive" />
-            </div>
           </div>
         </div>
       </div>
@@ -233,8 +237,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-10 col-xl-8 pt-hero">
-              <p class="font-weight-bold mb-2 text-white text-opacity-50">White Paper</p>
-              <h1 class="mt-0 mb-5 text-white">Imagine a World with No More ETLs or ELTs…</h1>
+              <p class="font-weight-bold mb-2">White Paper</p>
+              <h1 class="mt-0 mb-5">Imagine a World with No More ETLs or ELTs…</h1>
               <p><a class="btn btn-primary" href="https://info.themoderndatacompany.com/evolution-of-data3" role="button" target="_blank">Learn How</a></p>
             </div>
           </div>
@@ -259,65 +263,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container d-grid">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
-        <h2>Modern Data Fabric<br> for the AI-powered World</h2>
-        <p class="lead mb-lg-5">A first of its kind Data Operating System that removes complexity to future proof your data ecosystem so you can build and deploy new data services and applications... in <span class="strike-x-2"><img src="media/strike-x.svg">months</span> weeks.</p>
+        <h2 class="mb-3">Modern Data Fabric<br> for the AI-powered World</h2>
+          <p class="lead mb-lg-5">A first of its kind Data Operating System that removes complexity to future proof your data ecosystem so you can build and deploy new data services and applications... in <span style="text-decoration: line-through;">months</span> <span class="strike-x-2"><img src="media/circles_text.svg" style="width: 65px;">weeks.</span></p>
       </div>
       <div class="col-lg-12 text-center">
-        <img src="media/modern-data-fabric.svg" class="img-fluid mb-lg-5" alt="The Modern Data Fabric">
+        <img src="media/modern_scheme_main_page.svg" class="img-fluid mb-lg-5" alt="The Modern Data Fabric">
       </div>
     </div>
   </div>
 </div>
+
 
 <!--Quote-->
 <div class="bg-gray py-5">
   <div class="container d-grid">
     <div class="row justify-content-center">
-        <div class="col-lg-9 mb-4 mt-4 ">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4 mb-lg-5">
-         <!--Garther-1-->
-      <div class="col">
-        <div class="card h-100 rounded-0 border-0 p-3 pt-4">
-          <div class="card-body">
-              <svg xmlns="http://www.w3.org/2000/svg" width="128.081" height="29.127" viewBox="0 0 128.081 29.127" class="mb-3">
-  <path id="path3345" d="M306.641-207.206l-.369,4.427h-1.808a4.338,4.338,0,0,0-4.387,4.531v10h-5.116v-18.957h4.846l.11,2.366a5.517,5.517,0,0,1,4.99-2.366Zm-35.468,18.956h-5.121v-10.021c0-2.1-.181-4.74-3.133-4.74-2.843,0-3.975,2.052-3.975,4.441v10.321h-5.119v-18.957h4.746l.108,2.423a6.427,6.427,0,0,1,5.706-2.886c5.159,0,6.787,3.683,6.787,7.516Zm-19.581-4.428-.358,4.313a13.3,13.3,0,0,1-3.637.448c-4.825,0-6.224-2.212-6.224-6.659v-17.976h5.12v5.346h5.095l-.354,4.426h-4.741v7.819c0,1.784.489,2.748,2.32,2.748a8.4,8.4,0,0,0,2.779-.465m-11.9-14.528-.4,4.427H237.9a4.28,4.28,0,0,0-4.313,4.531v10h-5.121v-18.957h4.848l.1,2.366a5.535,5.535,0,0,1,5-2.366Zm-34.327,16.856a21.722,21.722,0,0,1-11.523,2.8c-8.494-.259-14.622-5.534-14.622-14.442,0-8.87,6.187-14.537,14.626-14.67,4.278-.065,8.106,1.02,11.1,3.66l-3.6,3.646a11.16,11.16,0,0,0-7.831-2.353c-5.311.247-8.511,4.107-8.582,9.413-.069,5.749,3.456,9.711,8.967,9.856a13.45,13.45,0,0,0,6.059-1.005v-5.877h-5.728l.387-4.82h10.754Zm87.31-5.576H278.637a4.637,4.637,0,0,0,4.675,3.946c2.305.063,3.595-.634,5.281-2.341l3.341,2.547a10.236,10.236,0,0,1-8.469,3.989,9.573,9.573,0,0,1-9.985-9.942,9.512,9.512,0,0,1,9.772-9.94c6.08,0,9.422,3.683,9.422,10.222Zm-5.129-3.963a3.981,3.981,0,0,0-4.422-3.812,4.5,4.5,0,0,0-4.486,3.812Zm-62.3-.773v12.413h-4.514l-.112-1.869c-1.385,1.715-3.633,2.333-5.948,2.333-3.486,0-6.78-1.719-6.849-5.722-.1-6.293,7.082-6.74,11.6-6.74h.9v-.249c0-2.081-1.377-3.2-3.97-3.2a7.475,7.475,0,0,0-5.057,2.02l-2.954-3a12.844,12.844,0,0,1,8.446-2.986c5.872,0,8.461,2.714,8.461,7.006m-4.926,4.146h-.712c-2.424.005-6.682.124-6.666,2.659.023,3.571,7.378,2.436,7.378-1.87Zm82.325,6.062a2.061,2.061,0,0,1,2.078-2.116,2.06,2.06,0,0,1,2.065,2.116,2.063,2.063,0,0,1-2.065,2.134,2.064,2.064,0,0,1-2.078-2.134m2.078,2.558a2.546,2.546,0,0,0,2.576-2.558A2.541,2.541,0,0,0,304.725-193a2.545,2.545,0,0,0-2.59,2.541,2.55,2.55,0,0,0,2.59,2.558m-.54-2.354h.514l.774,1.274h.5l-.836-1.295a.765.765,0,0,0,.762-.811c0-.579-.344-.836-1.039-.836h-1.119v2.942h.444Zm0-.379v-.909h.606c.311,0,.641.067.641.431,0,.452-.337.478-.714.478Z" transform="translate(-179.22 216.669)" fill="#182954"/>
-</svg>
-
-
-
-              <p class="card-text"><span style="font-size: 21px; font-weight: 600;">Tool: Vendor Identification for Data and Analytics Governance Platforms</span><br> Modern checks all of the critical capabilities in data governance platforms</p> 
-          </div>
-            
-        </div>
-      </div>
-            
-        <!--Garther-2-->
-       <div class="col">
-        <div class="card h-100 rounded-0 border-0 p-3 pt-4">
-          <div class="card-body">
-             <svg xmlns="http://www.w3.org/2000/svg" width="128.081" height="29.127" viewBox="0 0 128.081 29.127" class="mb-3">
-  <path id="path3345" d="M306.641-207.206l-.369,4.427h-1.808a4.338,4.338,0,0,0-4.387,4.531v10h-5.116v-18.957h4.846l.11,2.366a5.517,5.517,0,0,1,4.99-2.366Zm-35.468,18.956h-5.121v-10.021c0-2.1-.181-4.74-3.133-4.74-2.843,0-3.975,2.052-3.975,4.441v10.321h-5.119v-18.957h4.746l.108,2.423a6.427,6.427,0,0,1,5.706-2.886c5.159,0,6.787,3.683,6.787,7.516Zm-19.581-4.428-.358,4.313a13.3,13.3,0,0,1-3.637.448c-4.825,0-6.224-2.212-6.224-6.659v-17.976h5.12v5.346h5.095l-.354,4.426h-4.741v7.819c0,1.784.489,2.748,2.32,2.748a8.4,8.4,0,0,0,2.779-.465m-11.9-14.528-.4,4.427H237.9a4.28,4.28,0,0,0-4.313,4.531v10h-5.121v-18.957h4.848l.1,2.366a5.535,5.535,0,0,1,5-2.366Zm-34.327,16.856a21.722,21.722,0,0,1-11.523,2.8c-8.494-.259-14.622-5.534-14.622-14.442,0-8.87,6.187-14.537,14.626-14.67,4.278-.065,8.106,1.02,11.1,3.66l-3.6,3.646a11.16,11.16,0,0,0-7.831-2.353c-5.311.247-8.511,4.107-8.582,9.413-.069,5.749,3.456,9.711,8.967,9.856a13.45,13.45,0,0,0,6.059-1.005v-5.877h-5.728l.387-4.82h10.754Zm87.31-5.576H278.637a4.637,4.637,0,0,0,4.675,3.946c2.305.063,3.595-.634,5.281-2.341l3.341,2.547a10.236,10.236,0,0,1-8.469,3.989,9.573,9.573,0,0,1-9.985-9.942,9.512,9.512,0,0,1,9.772-9.94c6.08,0,9.422,3.683,9.422,10.222Zm-5.129-3.963a3.981,3.981,0,0,0-4.422-3.812,4.5,4.5,0,0,0-4.486,3.812Zm-62.3-.773v12.413h-4.514l-.112-1.869c-1.385,1.715-3.633,2.333-5.948,2.333-3.486,0-6.78-1.719-6.849-5.722-.1-6.293,7.082-6.74,11.6-6.74h.9v-.249c0-2.081-1.377-3.2-3.97-3.2a7.475,7.475,0,0,0-5.057,2.02l-2.954-3a12.844,12.844,0,0,1,8.446-2.986c5.872,0,8.461,2.714,8.461,7.006m-4.926,4.146h-.712c-2.424.005-6.682.124-6.666,2.659.023,3.571,7.378,2.436,7.378-1.87Zm82.325,6.062a2.061,2.061,0,0,1,2.078-2.116,2.06,2.06,0,0,1,2.065,2.116,2.063,2.063,0,0,1-2.065,2.134,2.064,2.064,0,0,1-2.078-2.134m2.078,2.558a2.546,2.546,0,0,0,2.576-2.558A2.541,2.541,0,0,0,304.725-193a2.545,2.545,0,0,0-2.59,2.541,2.55,2.55,0,0,0,2.59,2.558m-.54-2.354h.514l.774,1.274h.5l-.836-1.295a.765.765,0,0,0,.762-.811c0-.579-.344-.836-1.039-.836h-1.119v2.942h.444Zm0-.379v-.909h.606c.311,0,.641.067.641.431,0,.452-.337.478-.714.478Z" transform="translate(-179.22 216.669)" fill="#182954"/>
-</svg>
-
-             <!-- <img src="media/home_quote.png" class="flex-shrink-0 me-2 mb-2" style="max-width:47%" alt="Gartner">-->
-              <p class="card-text"><span style="font-size: 21px; font-weight: 600; text-width: 333px;">Data and Analytics Essentials: DataOps</span><br>Modern data recognized an emerging vendor in Enterprise Data Management</p> 
-          </div>
-            
-        </div>
-      </div>
-        </div>
-         </div>
-    </div>
-  </div>
-</div>
-     
-
-
-<!--<div class="bg-gray py-5">
-  <div class="container d-grid">
-    <div class="row justify-content-center">
       <div class="col-lg-11 col-xl-9 text-center">
-        <p class="quote mb-lg-5">“If the median Fortune 1000 business in our sample (36,000 employees and $388,000 in sales per employee) increased their <span class="yellow-underline">data usability</span> by <span class="yellow-underline">10%</span>, it would translate to an increase in <span class="yellow-underline">$2.01 billion</span> in total revenue every year.”</p>
+        <p class="quote mb-lg-5">“If the median Fortune 1000 business in our sample (36,000 employees and $388,000 in sales per employee) increased their <strong>data usability by 10%</strong>, it would translate to an increase in <strong>$2.01 billion</strong> in total revenue every year.”</p>
       </div>
       <div class="col-lg-12 text-center mb-lg-5">
         <img src="media/textas-uni.png" class="img-fluid" alt="texas University">
@@ -326,7 +288,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </div>
-</div>-->
+</div>
 
 
 <!--From the Founders-->
@@ -334,10 +296,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container d-grid">
     <div class="row justify-content-end">
       <div class="col-lg-7 px-4 mt-lg-5">
-        <div class="card bg-white rounded-0 border-0 mt-5 mb-n7">
+        <div class="card bg-dark rounded-0 border-0 pt-4 pb-4  ">
           <div class="card-body p-4 p-lg-5">
-            <h2 class="mt-0">From<br>the Founders</h2>
-            <p>Today, enterprises are spending heavily on a range of data products and stitching them together to get some semblance of a data fabric. These data products require significant integration and customization work, resulting in a final product that lacks flexibility.<br><br>
+            <h2 class="mt-0 mb-3" style="color: white;">From the Founders</h2>
+            <p style="color: white;">Today, enterprises are spending heavily on a range of data products and stitching them together to get some semblance of a data fabric. These data products require significant integration and customization work, resulting in a final product that lacks flexibility.<br><br>
               We saw a need for a data platform that humanizes data and its access, breaks data silos, and transforms companies as they step towards data democratization and gaining business insights in real-time.<br>
               <span class="font-weight-bold">That’s why we founded The Modern Data Company.</span>
             </p>
@@ -349,160 +311,189 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
+
+
 <!--The Modern Benefit-->
-<div class="bg-yellow px-3 py-5">
-  <div class="container pt-lg-5">
+<div class="bg-white py-5">
+  <div class="container  d-grid">
     <div class="row justify-content-center">
-      <div class="col-lg-12 text-center mt-lg-5">
-        <h2 class="mt-5">The Modern Benefit</h2>
+      <div class="col-lg-12 text-center mb-4 mt-lg-5">
+        <h2 class="mt-5 mb-3">The Modern Benefit</h2>
       </div>
-      <div class="col-lg-4 mb-5">
-        <div class="d-flex">
-          <img src="media/icons/icon-seamless.svg" class="flex-shrink-0 me-2" alt="Seamless Integration">
-          <h3 class="lh-1">Seamless Integration</h3>
+        
+        <!--Card 1-->
+      <div class="col">
+          <div class="card rounded-0 border-0 p-5 mb-4 bg-gray" style="height: 460px">
+          <img src="media/icons/icon-seamless.svg" class="flex-shrink-0 me-2 mt-4 mb-4" style="width:60px" alt="Seamless Integration">
+          <h3 class="lh-1 mb-4">Seamless Integration</h3>
+        <p class="lh-1 mb-0">Any format, any size, any velocity</p>
+        <p class="lh-1 mb-0">Agile ingestion</p>
+        <p class="lh-1 mb-0">80% reduction in pre-processing time</p>
+      </div>
         </div>
-        <ul>
-          <li>Any format, any size, any velocity</li>
-          <li>Agile ingestion</li>
-          <li>80% reduction in pre-processing time</li>
-        </ul>
-      </div>
+        
+        
+        <!--Card 2-->
+      <div class="col">
+        <div class="card rounded-0 border-0 p-5 mb-4 bg-gray" style="height: 460px">
+          <img src="media/icons/icon-proactive.svg" class="flex-shrink-0 me-2 mt-4 mb-4" style="width:60px" alt="Proactive Management">
+          <h3 class="lh-1 mb-4">Proactive Management</h3>
 
-      <div class="col-lg-4 mb-5">
-        <div class="d-flex">
-          <img src="media/icons/icon-proactive.svg" class="flex-shrink-0 me-2" alt="Proactive Management">
-          <h3 class="lh-1">Proactive Management</h3>
+            <p class="lh-1 mb-0">Data-ops </p>
+       <p class="lh-1 mb-0">Policies and security</p>
+       <p class="lh-1 mb-0">Observability</p>
+       <p class="lh-1 mb-0">60% reduction in Analytics cost</p>
+      </div>
         </div>
-        <ul>
-          <li>Data-ops</li>
-          <li>Policies and security</li>
-          <li>Observability</li>
-          <li>60% reduction in Analytics cost</li>
-        </ul>
+        
+        
+        <!--Card 2-->
+      <div class="col">
+        <div class="card rounded-0 border-0 p-5 mb-4 bg-gray" style="height: 460px">
+          <img src="media/icons/icon-selfserve.svg" class="flex-shrink-0 me-2 mt-4 mb-4" style="width:60px" alt="Self-Serve Access">
+          <h3 class="lh-1 mb-4">Self-Serve Access</h3>
+        <p class="lh-1 mb-0">Any format, any size, any velocity</p>
+        <p class="lh-1 mb-0">Agile ingestion</p>
+        <p class="lh-1 mb-0">80% reduction in pre-processing time </p>
       </div>
-
-      <div class="col-lg-4 mb-5">
-        <div class="d-flex">
-          <img src="media/icons/icon-selfserve.svg" class="flex-shrink-0 me-2" alt="Self-Serve Access">
-          <h3 class="lh-1">Self-Serve Access</h3>
         </div>
-        <ul>
-          <li>Any format, any size, any velocity</li>
-          <li>Agile ingestion</li>
-          <li>80% reduction in pre-processing time</li>
-        </ul>
+        
       </div>
-
     </div>
-  </div>
 </div>
+    
+
+
 
 <!--The Modern Difference-->
-<div class="py-5">
-  <div class="container d-grid">
+<div class="bg-white py-5">
+  <div class="container d-grid mb-5">
     <div class="row justify-content-center">
-      <div class="col-lg-12 text-center">
-        <h2>The Modern Difference</h2>
+      <div class="col-lg-12">
+        <div class="mb-5 pb-1">  
+        <h2 class="text-center">The Modern Difference</h2>
       </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-lg-5">
-      <!--Simplicity-->
-      <div class="col">
-        <div class="card h-100 rounded-0 border-0 shadow-sm p-3">
-          <div class="card-body">
-            <h3 class="card-title border-bottom border-2 border-secondary pb-3 mt-0">Simplicity</h3>
-            <p class="card-text">Deploy in any cloud, bring in any data, and get ROI in a few weeks.</p>
-          </div>
         </div>
+   
+      
+    <!--Simplicity-->  
+    <div class="col-12 col-lg-3">
+      <div>
+    <img src="/img/path_1.svg"/> 
+          <div class="border-bottom mb-4 pb-4"></div>
+      </div>    
+        <h3 class="mb-3">Simplicity</h3>
+        <p>Deploy in any cloud, bring in any data, and get ROI in a few weeks.</p> 
       </div>
 
+      
       <!--Collaboration-->
-      <div class="col">
-        <div class="card h-100 rounded-0 border-0 shadow-sm p-3">
-          <div class="card-body">
-            <h3 class="card-title border-bottom border-2 border-secondary pb-3 mt-0">Collaboration</h3>
-            <p class="card-text">With smart data discovery and a unified semantic tier, collaboration and exploration become as easy as Google Docs, Jira, or emails.</p>
-          </div>
-        </div>
+      <div class="col-12 col-lg-3">
+    <div>
+    <img src="/img/path_2.svg"/> 
+          <div class="border-bottom mb-4 pb-4"></div>
+      </div>          
+           <h3 class="mb-3">Collaboration</h3>
+        <p>With smart data discovery and a unified semantic tier, collaboration and exploration become as easy as Google Docs, Jira, or emails.</p> 
+      </div>
+        
+        
+        <!--Agility-->
+      <div class="col-12 col-lg-3">
+    <div>
+    <img src="/img/path_3.svg"/> 
+          <div class="border-bottom mb-4 pb-4"></div>
+      </div>          
+           <h3 class="mb-3">Agility</h3>
+        <p>With the moden empathy-driven architecture, Future-proof your data ecosystem for unanticipated business needs with modern empathy-driven architecture.</p> 
       </div>
 
-      <!--Agility-->
-      <div class="col">
-        <div class="card h-100 rounded-0 border-0 shadow-sm p-3">
-          <div class="card-body">
-            <h3 class="card-title border-bottom border-2 border-secondary pb-3 mt-0">Agility</h3>
-            <p class="card-text">With the moden empathy-driven architecture, Future-proof your data ecosystem for unanticipated business needs with modern empathy-driven architecture.</p>
-          </div>
-        </div>
+
+           <!--Security-->
+      <div class="col-12 col-lg-3">
+    <div>
+    <img src="/img/path_4.svg"/> 
+          <div class="border-bottom mb-4 pb-4"></div>
+      </div>          
+           <h3 class="mb-3">Security</h3>
+        <p>Govern your data with an ABAC-based security engine that automatically makes you CCPA/GDPR compliant.</p> 
       </div>
 
-      <!--Security-->
-      <div class="col">
-        <div class="card h-100 rounded-0 border-0 shadow-sm p-3">
-          <div class="card-body">
-            <h3 class="card-title border-bottom border-2 border-secondary pb-3 mt-0">Security</h3>
-            <p class="card-text">Govern your data with an ABAC-based security engine that automatically makes you CCPA/GDPR compliant. </p>
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>
 </div>
 
 <!--The Modern Approach-->
-<div class="bg-gray py-5">
+<div class="bg-green py-5">
   <div class="container d-grid">
     <div class="row justify-content-center">
       <div class="col-lg-12">
         <h2 class="text-center mb-5">The Modern Approach</h2>
-
       </div>
     </div>
     <div class="row align-items-end">
+        
+        
       <!--Start small-->
-      <div class="col-12 col-lg-4 text-white bg-antracite p-4 p-lg-5">
-        <h3 class="display-2 mb-0 mt-lg-0">Start small</h3>
-        <p class="lead">2-3 Months</p>
+        <div class="col">
+      <div class="col-12  bg-gray pt-5 ps-5 pe-5 mb-4 card rounded-0 border-0">  
+         <img src="img/img-price.png" class="price">
+        <h3 class="display-2  mt-lg-0 mb-4 ">Start small</h3>
+           <p class="lead">2-3 Months</p>
         <ul class="special-height">
           <li>Pre-processed and cleaned data</li>
           <li>Play around and visualize on your own</li>
           <li>Deliver ROI fast</li>
           <li>Evangelize success and start expanding the data fabric</li>
         </ul>
+            </div>
       </div>
+        
+        
       <!--Expand-->
-      <div class="col-12 col-lg-4 text-white bg-antracite-dark p-4 p-lg-5">
-        <h3 class="display-2 mb-0 mt-lg-3">Expand</h3>
+        <div class="col">
+      <div class="col-12 bg-gray pt-5 ps-5 pe-5 mb-4 card rounded-0 border-0">
+      <img src="img/img-price-1.png" class="price">
+        <h3 class="display-2 mt-lg-4 mb-4">Expand</h3>
         <p class="lead">2-3 Months</p>
-        <ul class="special-height">
+        <ul class="special-height ">
           <li>Deliver cross-BU insights</li>
           <li>Smart data discovery</li>
           <li>Global metrics and pattern detection</li>
         </ul>
+            </div>
       </div>
+    
+        
       <!--Go big-->
-      <div class="col-12 col-lg-4 text-white bg-red p-4 p-lg-5">
-        <h3 class="display-2 mb-0 mt-lg-5">Go big</h3>
+        <div class="col">
+      <div class=" col-12 bg-gray pt-5 ps-5 pe-5 mb-4 card rounded-0 border-0">
+          <img src="img/img-price-2.png" class="price">
+        <h3 class="display-2 mt-lg-5">Go big</h3>
         <p class="lead">5-6 Months</p>
         <ul class="special-height">
           <li>Source of truth for all business data</li>
           <li>Data syndication, auditing and monetization hub</li>
           <li>Universal, domain, and tribal knowledge bases</li>
         </ul>
+            </div>
       </div>
     </div>
   </div>
 </div>
 
+
+
+
+
 <!-- Footer CTA -->
-<div class="bg-gray px-4 pb-5">
+<div class="bg-gray px-4 pb-5 pt-5">
   <div class="container d-grid">
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-7 text-center">
-        <h2 class="mb-1">Unclutter Your Data in <span class="yellow-underline">6 Weeks</span></h2>
-        <p class="lead mb-5">Don’t power your innovative solutions with bad data. Power them with secure,
-          governed and high-quality data every time.</p>
+        <h2 class="mb-1">Unclutter Your Data in 6 Weeks</h2>
+        <p class="lead mb-4">Don’t power your innovative solutions with bad data. Power them with secure, governed<br> and high-quality data every time.</p>
         <a class="btn btn-primary mb-lg-5" href="/data-management-solution-demo.html" role="button">Get a Demo</a>
       </div>
     </div>
@@ -568,7 +559,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container-fluid border-top px-lg-5 border-dark">
   <div class="row py-3">
       <div class="col-12 small text-muted text-center text-lg-start">
-        ⓒ2021 The Modern Data Company
+        ⓒ2022 The Modern Data Company
       </div>
     </div>
   </div>
