@@ -970,7 +970,7 @@ footer .footer-nav a:hover {
 
 /*Backgrounds*/
 #homepage-hero .carousel-item {
-  height: 35rem;
+  height: 41rem;
 }
 
 #homepage-hero .main.carousel-item {
@@ -1031,7 +1031,7 @@ footer .footer-nav a:hover {
 
 
 #homepage-hero .carousel-caption {
-  top: 8%;
+  top: 15%;
   color: #000;
 }
 
@@ -1130,6 +1130,12 @@ footer .footer-nav a:hover {
   vertical-align: middle;
 }
 
+/*Blog images*/
+.rounded-5 {
+   border-radius: 13px !important;
+}
+
+
 
 /*Blog*/
 .posts-grid {
@@ -1157,6 +1163,9 @@ footer .footer-nav a:hover {
   -webkit-transition: background-size .2s ease-out;
   transition: background-size .2s ease-out;
 }
+
+
+
 
 .post-article {
   margin-top: -15rem;
