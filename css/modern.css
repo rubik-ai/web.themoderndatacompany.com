@@ -990,7 +990,7 @@ footer .footer-nav a:hover {
 }
 
 #homepage-hero .infographic.carousel-item {
-  background: url(../media/carousel/hero_inforgraphic_composable_data.png) center no-repeat #FC4545;
+  background: url(../media/carousel/hero_inforgraphic_composable_data.png) center no-repeat #2C3349;
   background-size: cover;
 }
 
@@ -1000,7 +1000,7 @@ footer .footer-nav a:hover {
 }
 
 #homepage-hero .free-data.carousel-item  {
-  background: url(../media/carousel/hero_free_your_data.png) center no-repeat #FC4545;
+  background: url(../media/carousel/hero_free_your_data.png) center no-repeat #2C3349;
   background-size: cover;
 }
 
