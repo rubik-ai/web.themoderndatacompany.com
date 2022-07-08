@@ -1014,7 +1014,10 @@ footer .footer-nav a:hover {
   background-size: cover;
 }
 
-
+#homepage-hero .event.carousel-item {
+  background: url(../media/carousel/homepage_slider_event.png) top center no-repeat #2C3349;
+  background-size: cover;
+}
 
 @media screen and (max-width: 768px) {
 
