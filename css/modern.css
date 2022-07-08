@@ -1022,8 +1022,9 @@ footer .footer-nav a:hover {
 @media screen and (max-width: 768px) {
 
   #homepage-hero .carousel-item .pt-hero {
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
+   
 
   #homepage-hero .carousel-item h1,
   #homepage-hero .carousel-item h2 {
